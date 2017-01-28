@@ -1,0 +1,1 @@
+Check syntax of command line! The first parameter must be 'comX'! X is the number of the serial port.

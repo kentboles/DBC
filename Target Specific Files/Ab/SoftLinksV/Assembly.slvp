@@ -1,0 +1,2233 @@
+﻿<Protocol mc:Ignorable="sads sap" ActivityLabel="" DisplayName="Assembly" HasConstraints="False" sap:VirtualizedContainerService.HintSize="3849,3472" SLXId="8eacd425-3084-4528-829f-8a0a127cb989" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces" ToolTip="" UserComments="" isActive="True" isSetup="True"
+ xmlns="clr-namespace:Hudson.Workflow.Activities;assembly=Hudson.Workflow.Activities"
+ xmlns:hcc="clr-namespace:Hudson.Common.Communications;assembly=Hudson.Common"
+ xmlns:hwab="clr-namespace:Hudson.Workflow.Activities.Base;assembly=SoftLinxBaseActivities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:s="clr-namespace:System;assembly=mscorlib"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Protocol.Activities>
+    <scg:List x:TypeArguments="p:Activity" Capacity="16">
+      <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="3849,79" SLXId="a9d2f3a6-a96e-45ff-a7a5-c31be39c1e39" ToolTip="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+        <InstrumentActivity.Arguments>
+          <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+            <InstrumentActivityArguments.Address>
+              <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+            </InstrumentActivityArguments.Address>
+            <InstrumentActivityArguments.Arguments>
+              <scg:List x:TypeArguments="x:Object" Capacity="2">
+                <x:String>C:\J382\SOLOsoft\Safe to close TRobot.hso</x:String>
+                <x:String>True</x:String>
+              </scg:List>
+            </InstrumentActivityArguments.Arguments>
+            <InstrumentActivityArguments.hWnd>
+              <s:IntPtr />
+            </InstrumentActivityArguments.hWnd>
+          </InstrumentActivityArguments>
+        </InstrumentActivity.Arguments>
+        <InstrumentActivity.TimeConstraints>
+          <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+        </InstrumentActivity.TimeConstraints>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </InstrumentActivity>
+      <InstrumentActivity IconPath="{x:Null}" CommandLine="Set Temperature" Description="Set Temperature 2, False" DisplayName="TorreyPinesRIC20" HasConstraints="False" sap:VirtualizedContainerService.HintSize="3849,79" SLXId="f6fd0b9c-48e8-4ed7-8eb8-898d640de25f" ToolTip="Set Temperature 2, False" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+        <InstrumentActivity.Arguments>
+          <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="TorreyPinesRIC20" Command="Set Temperature">
+            <InstrumentActivityArguments.Address>
+              <hcc:SLAddress x:Name="__ReferenceID2" Name="TorreyPinesRIC20" Workcell="SoftLinx" />
+            </InstrumentActivityArguments.Address>
+            <InstrumentActivityArguments.Arguments>
+              <scg:List x:TypeArguments="x:Object" Capacity="2">
+                <x:String>2</x:String>
+                <x:String>False</x:String>
+              </scg:List>
+            </InstrumentActivityArguments.Arguments>
+            <InstrumentActivityArguments.hWnd>
+              <s:IntPtr />
+            </InstrumentActivityArguments.hWnd>
+          </InstrumentActivityArguments>
+        </InstrumentActivity.Arguments>
+        <InstrumentActivity.TimeConstraints>
+          <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+        </InstrumentActivity.TimeConstraints>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </InstrumentActivity>
+      <DelayActivity CommandLine="" Description="" DisplayName="Delay: 00:00:05" HasConstraints="False" sap:VirtualizedContainerService.HintSize="3849,78" SLXId="435b5515-a64f-4a18-988b-478f41d3029e" ToolTip="" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+        <DelayActivity.Arguments>
+          <DelayActivityArguments Delay="00:00:05" />
+        </DelayActivity.Arguments>
+        <DelayActivity.TimeConstraints>
+          <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+        </DelayActivity.TimeConstraints>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </DelayActivity>
+      <LoopActivity ActivityLabel="" DisplayName="Loop Process" HasConstraints="False" sap:VirtualizedContainerService.HintSize="3849,2812" SLXId="4092311f-e286-41d7-9d4c-970f27582103" ToolTip="Loop 1 times." UserComments="" isActive="True" isSetup="True">
+        <LoopActivity.Activities>
+          <scg:List x:TypeArguments="p:Activity" Capacity="4">
+            <ParallelActivity ActivityLabel="" DisplayName="Parallel Activity" HasConstraints="False" sap:VirtualizedContainerService.HintSize="3807,2650" SLXId="c7c69726-9445-44db-b412-c411758f19ac" ToolTip="Run in the following order: 12345" UserComments="" isActive="True" isSetup="True">
+              <ParallelActivity.Activities>
+                <scg:List x:TypeArguments="p:Activity" Capacity="8">
+                  <BranchActivity ActivityLabel="" DisplayName="Branch 1" HasConstraints="False" sap:VirtualizedContainerService.HintSize="845,2556" SLXId="182b9d5d-75fd-4dbb-a178-2ba5afe44a61" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                    <BranchActivity.Activities>
+                      <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                        <RegionActivity ActivityLabel="" DisplayName="PCR1 Step 1" HasConstraints="False" sap:VirtualizedContainerService.HintSize="845,1735" SLXId="92e0bb5d-9e50-4031-81fd-d1a35e2432a5" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                          <RegionActivity.Activities>
+                            <scg:List x:TypeArguments="p:Activity" Capacity="16">
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="Open Lid" Description="" DisplayName="TRobot" HasConstraints="False" sap:VirtualizedContainerService.HintSize="769,62" SLXId="8c3fc50c-2e5f-4a1f-884c-38b21459c795" ToolTip="" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="TRobot" Command="Open Lid">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="TRobot" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="0" />
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <RegionActivity ActivityLabel="" DisplayName="Add PCR1 mix" HasConstraints="False" sap:VirtualizedContainerService.HintSize="767,234" SLXId="88198f02-52bc-4800-b6c4-46d88a8ebfc8" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                <RegionActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\GAM A1 to Col1-4 45ul.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="338,82" SLXId="6abed37a-3c1f-4e27-9783-46b9784ad15a" ToolTip="Run: C:\J382\SOLOsoft\GAM A1 to Col1-4 45ul.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                          <InstrumentActivityArguments.Address>
+                                            <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                          </InstrumentActivityArguments.Address>
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                              <x:String>C:\J382\SOLOsoft\GAM A1 to Col1-4 45ul.hso</x:String>
+                                              <x:String>True</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                  </scg:List>
+                                </RegionActivity.Activities>
+                                <RegionActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </RegionActivity.Activities2>
+                                <RegionActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </RegionActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </RegionActivity>
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="ResetLoopCounts" Description="" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="767,64" SLXId="3fed5e57-4348-4529-a61c-85036ccb73c4" ToolTip="" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="ResetLoopCounts">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="0" />
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="767,82" SLXId="d9648fcb-593a-436a-b2fa-40908e66f4a9" ToolTip="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                        <x:String>C:\J382\SOLOsoft\Safe to close TRobot.hso</x:String>
+                                        <x:String>True</x:String>
+                                      </scg:List>
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <EmailActivity CommandLine="" Description="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" DisplayName="Send E-Mail" HasConstraints="False" sap:VirtualizedContainerService.HintSize="769,44" SLXId="f4d0b865-65ae-44cd-95ca-46fa0cb0a6cb" ToolTip="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" UserComments="" isActive="False" isCanceled="False" isSetup="True">
+                                <EmailActivity.Arguments>
+                                  <EmailActivityArguments Body="Step 1 OsOs in Progress" From="SGIDNA-DAM@sgidna.com" Server="aspmx.l.google.com" Subject="Step 1 OsOs in Progress" To="jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" />
+                                </EmailActivity.Arguments>
+                                <EmailActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </EmailActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </EmailActivity>
+                              <ParallelActivity ActivityLabel="" DisplayName="Parallel Activity" HasConstraints="False" sap:VirtualizedContainerService.HintSize="769,862" SLXId="2592c3a6-7817-47f9-808b-60a674be8420" ToolTip="Run all branches simultaneously." UserComments="" isActive="True" isSetup="True">
+                                <ParallelActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <BranchActivity ActivityLabel="" DisplayName="Branch 1" HasConstraints="False" sap:VirtualizedContainerService.HintSize="180,768" SLXId="f8e85b5f-7a21-4259-8596-be0142378739" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                      <BranchActivity.Activities>
+                                        <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                          <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Directory: 02: ''&#xA;Program: 09: 'OS70SH  '" DisplayName="TRobot" HasConstraints="False" sap:VirtualizedContainerService.HintSize="180,94" SLXId="528469f3-3b0c-4ccd-8be5-b5d916aa6107" ToolTip="Directory: 02: ''&#xA;Program: 09: 'OS70SH  '" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                            <InstrumentActivity.Arguments>
+                                              <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="TRobot" Command="Run">
+                                                <InstrumentActivityArguments.Address>
+                                                  <hcc:SLAddress Name="TRobot" Workcell="SoftLinx" />
+                                                </InstrumentActivityArguments.Address>
+                                                <InstrumentActivityArguments.Arguments>
+                                                  <scg:List x:TypeArguments="x:Object" Capacity="1">
+                                                    <x:String>2,9</x:String>
+                                                  </scg:List>
+                                                </InstrumentActivityArguments.Arguments>
+                                                <InstrumentActivityArguments.hWnd>
+                                                  <s:IntPtr />
+                                                </InstrumentActivityArguments.hWnd>
+                                              </InstrumentActivityArguments>
+                                            </InstrumentActivity.Arguments>
+                                            <InstrumentActivity.TimeConstraints>
+                                              <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                            </InstrumentActivity.TimeConstraints>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </InstrumentActivity>
+                                        </scg:List>
+                                      </BranchActivity.Activities>
+                                      <BranchActivity.Activities2>
+                                        <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                      </BranchActivity.Activities2>
+                                      <BranchActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </BranchActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </BranchActivity>
+                                    <BranchActivity ActivityLabel="" DisplayName="Branch 2" HasConstraints="False" sap:VirtualizedContainerService.HintSize="469,768" SLXId="ae06d792-bc74-4b0b-a6d5-829a313a6730" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                      <BranchActivity.Activities>
+                                        <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                          <CriticalRegionActivity ActivityLabel="" DisplayName="Dispense QC Plate" HasConstraints="False" sap:VirtualizedContainerService.HintSize="469,704" SLXId="83306a93-80d1-466c-8f59-e677ae8e4133" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                            <CriticalRegionActivity.Activities>
+                                              <scg:List x:TypeArguments="p:Activity" Capacity="8">
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Move Plate" Description="From: SoftLinx.LowerPlateCrane.Stack2&#xA;To: SoftLinx.SGI.ElevatorBottom" DisplayName="LowerPlateCrane" HasConstraints="False" sap:VirtualizedContainerService.HintSize="393,94" SLXId="a229d3df-a2af-4f34-aefb-fd2e6bf13361" ToolTip="From: SoftLinx.LowerPlateCrane.Stack2&#xA;To: SoftLinx.SGI.ElevatorBottom" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="PlateCrane" Command="Move Plate">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="LowerPlateCrane" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="7">
+                                                          <x:String>SoftLinx.LowerPlateCrane.Stack2</x:String>
+                                                          <x:String>SoftLinx.SGI.ElevatorBottom</x:String>
+                                                          <x:String>Safe</x:String>
+                                                          <x:String>0</x:String>
+                                                          <x:String></x:String>
+                                                          <x:String>False</x:String>
+                                                          <x:String>False</x:String>
+                                                        </scg:List>
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Lift Plate" Description="" DisplayName="SGI" HasConstraints="False" sap:VirtualizedContainerService.HintSize="393,79" SLXId="821f38ea-f231-4a79-81ce-62b518639599" ToolTip="" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="SGI" Command="Lift Plate">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="SGI" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="0" />
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Move Plate" Description="MovePlate from SoftLinx.Aspirator.Nest to SoftLinx.StackLink.PosA." DisplayName="StackLink" HasConstraints="False" sap:VirtualizedContainerService.HintSize="393,79" SLXId="69f76101-c750-4cb1-adea-0a8c9d108282" ToolTip="MovePlate from SoftLinx.Aspirator.Nest to SoftLinx.StackLink.PosA." UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="StackLink" Command="Move Plate">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="StackLink" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                                          <x:String>SoftLinx.Aspirator.Nest</x:String>
+                                                          <x:String>SoftLinx.StackLink.PosA</x:String>
+                                                        </scg:List>
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Move Plate" Description="From: SoftLinx.StackLink.PosA&#xA;To: SoftLinx.Solo.Position4" DisplayName="UpperPlateCrane" HasConstraints="False" sap:VirtualizedContainerService.HintSize="393,94" SLXId="7a113a38-08be-4f80-a96c-6674270c1ea6" ToolTip="From: SoftLinx.StackLink.PosA&#xA;To: SoftLinx.Solo.Position4" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="PlateCrane" Command="Move Plate">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="UpperPlateCrane" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="7">
+                                                          <x:String>SoftLinx.StackLink.PosA</x:String>
+                                                          <x:String>SoftLinx.Solo.Position4</x:String>
+                                                          <x:String>Safe</x:String>
+                                                          <x:String>0</x:String>
+                                                          <x:String></x:String>
+                                                          <x:String>False</x:String>
+                                                          <x:String>False</x:String>
+                                                        </scg:List>
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Move Crane" Description="MoveCrane to 'SoftLinx.UpperPlateCrane.Safe'" DisplayName="UpperPlateCrane" HasConstraints="False" sap:VirtualizedContainerService.HintSize="393,79" SLXId="1afaa887-d9ff-4783-bb16-651608026838" ToolTip="MoveCrane to 'SoftLinx.UpperPlateCrane.Safe'" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="PlateCrane" Command="Move Crane">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="UpperPlateCrane" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="1">
+                                                          <x:String>SoftLinx.UpperPlateCrane.Safe</x:String>
+                                                        </scg:List>
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                              </scg:List>
+                                            </CriticalRegionActivity.Activities>
+                                            <CriticalRegionActivity.Activities2>
+                                              <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                            </CriticalRegionActivity.Activities2>
+                                            <CriticalRegionActivity.TimeConstraints>
+                                              <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                            </CriticalRegionActivity.TimeConstraints>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </CriticalRegionActivity>
+                                        </scg:List>
+                                      </BranchActivity.Activities>
+                                      <BranchActivity.Activities2>
+                                        <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                      </BranchActivity.Activities2>
+                                      <BranchActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </BranchActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </BranchActivity>
+                                  </scg:List>
+                                </ParallelActivity.Activities>
+                                <ParallelActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </ParallelActivity.Activities2>
+                                <ParallelActivity.Arguments>
+                                  <ParallelActivityArguments BranchOrder="" IsByVariable="False" IsOrdered="False" IsStandard="True" VariableName="" />
+                                </ParallelActivity.Arguments>
+                                <ParallelActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </ParallelActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ParallelActivity>
+                              <EmailActivity CommandLine="" Description="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" DisplayName="Send E-Mail" HasConstraints="False" sap:VirtualizedContainerService.HintSize="769,44" SLXId="200836e8-e979-4548-bd49-a7922192bc55" ToolTip="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" UserComments="" isActive="False" isCanceled="False" isSetup="True">
+                                <EmailActivity.Arguments>
+                                  <EmailActivityArguments Body="Step 1 OsOs is Complete" From="SGIDNA-DAM@sgidna.com" Server="aspmx.l.google.com" Subject="Step 1 OsOs is Complete" To="jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" />
+                                </EmailActivity.Arguments>
+                                <EmailActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </EmailActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </EmailActivity>
+                            </scg:List>
+                          </RegionActivity.Activities>
+                          <RegionActivity.Activities2>
+                            <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                          </RegionActivity.Activities2>
+                          <RegionActivity.TimeConstraints>
+                            <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                          </RegionActivity.TimeConstraints>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </RegionActivity>
+                      </scg:List>
+                    </BranchActivity.Activities>
+                    <BranchActivity.Activities2>
+                      <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                    </BranchActivity.Activities2>
+                    <BranchActivity.TimeConstraints>
+                      <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                    </BranchActivity.TimeConstraints>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </BranchActivity>
+                  <BranchActivity ActivityLabel="" DisplayName="Branch 2" HasConstraints="False" sap:VirtualizedContainerService.HintSize="510,2556" SLXId="1ea881a5-f4dc-400e-9233-19cde9d1dbf0" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                    <BranchActivity.Activities>
+                      <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                        <RegionActivity ActivityLabel="" DisplayName="Error QC Step 2" HasConstraints="False" sap:VirtualizedContainerService.HintSize="510,1825" SLXId="9c296e1d-57e2-4267-9eaf-9897373b8e32" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                          <RegionActivity.Activities>
+                            <scg:List x:TypeArguments="p:Activity" Capacity="32">
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="Open Lid" Description="" DisplayName="TRobot" HasConstraints="False" sap:VirtualizedContainerService.HintSize="434,62" SLXId="f2d7bb38-3388-449f-a3ed-efd05ab91b01" ToolTip="" UserComments="" isActive="False" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="TRobot" Command="Open Lid">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="TRobot" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="0" />
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="434,82" SLXId="b1f5101b-282a-4d4b-8c1d-5b9e50d84b36" ToolTip="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                        <x:String>C:\J382\SOLOsoft\Safe to close TRobot.hso</x:String>
+                                        <x:String>True</x:String>
+                                      </scg:List>
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <EmailActivity CommandLine="" Description="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" DisplayName="Send E-Mail" HasConstraints="False" sap:VirtualizedContainerService.HintSize="434,44" SLXId="dc6499d2-15fe-47b8-be32-baf5c53eeb67" ToolTip="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" UserComments="" isActive="False" isCanceled="False" isSetup="True">
+                                <EmailActivity.Arguments>
+                                  <EmailActivityArguments Body="Step 2 denature in progress" From="SGIDNA-DAM@syntheticgenomics.com" Server="aspmx.l.google.com" Subject="Step 2 denature in progress" To="jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" />
+                                </EmailActivity.Arguments>
+                                <EmailActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </EmailActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </EmailActivity>
+                              <RegionActivity ActivityLabel="" DisplayName="Form Heteroduplexes" HasConstraints="False" sap:VirtualizedContainerService.HintSize="434,250" SLXId="7fef444f-ebf5-4dc9-88fc-de8b9e7ad1ca" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                <RegionActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Directory: 00: ''&#xA;Program: 01: 'Step2   '" DisplayName="TRobot" HasConstraints="False" sap:VirtualizedContainerService.HintSize="180,98" SLXId="5d48c6dc-92ab-4598-9353-604ceeb707e6" ToolTip="Directory: 00: ''&#xA;Program: 01: 'Step2   '" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="TRobot" Command="Run">
+                                          <InstrumentActivityArguments.Address>
+                                            <hcc:SLAddress Name="TRobot" Workcell="SoftLinx" />
+                                          </InstrumentActivityArguments.Address>
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="1">
+                                              <x:String>0,1</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                  </scg:List>
+                                </RegionActivity.Activities>
+                                <RegionActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </RegionActivity.Activities2>
+                                <RegionActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </RegionActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </RegionActivity>
+                              <EmailActivity CommandLine="" Description="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" DisplayName="Send E-Mail" HasConstraints="False" sap:VirtualizedContainerService.HintSize="434,44" SLXId="5413ca4f-f2ea-4115-ab25-904f09081cde" ToolTip="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" UserComments="" isActive="False" isCanceled="False" isSetup="True">
+                                <EmailActivity.Arguments>
+                                  <EmailActivityArguments Body="Step 2 denature is Complete" From="SGIDNA-DAM@syntheticgenomics.com" Server="aspmx.l.google.com" Subject="Step 2 denature is Complete" To="jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" />
+                                </EmailActivity.Arguments>
+                                <EmailActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </EmailActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </EmailActivity>
+                              <RegionActivity ActivityLabel="" DisplayName="Add Error Correction Mix" HasConstraints="False" sap:VirtualizedContainerService.HintSize="434,230" SLXId="4aa48ca8-95e4-4333-8cff-6b70b4d7bfbe" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                <RegionActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\GAM A2 to Col5-8 8.3ul.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="341,79" SLXId="d3187190-51f0-48df-879c-4ecd3fa660ef" ToolTip="Run: C:\J382\SOLOsoft\GAM A2 to Col5-8 8.3ul.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                          <InstrumentActivityArguments.Address>
+                                            <hcc:SLAddress x:Name="__ReferenceID0" Name="Solo" Workcell="SoftLinx" />
+                                          </InstrumentActivityArguments.Address>
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                              <x:String>C:\J382\SOLOsoft\GAM A2 to Col5-8 8.3ul.hso</x:String>
+                                              <x:String>True</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                  </scg:List>
+                                </RegionActivity.Activities>
+                                <RegionActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </RegionActivity.Activities2>
+                                <RegionActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </RegionActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </RegionActivity>
+                              <RegionActivity ActivityLabel="" DisplayName="Move PCR1 to Error" HasConstraints="False" sap:VirtualizedContainerService.HintSize="434,230" SLXId="fd7316fe-14d2-4b12-8229-f48214b7f90b" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                <RegionActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\GAM 1-4 to 5-8 2.7ul w QC.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="358,79" SLXId="8dbb8658-fddd-43c8-bc5d-d497734d370f" ToolTip="Run: C:\J382\SOLOsoft\GAM 1-4 to 5-8 2.7ul w QC.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments Address="{x:Reference __ReferenceID0}" ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                              <x:String>C:\J382\SOLOsoft\GAM 1-4 to 5-8 2.7ul w QC.hso</x:String>
+                                              <x:String>True</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                  </scg:List>
+                                </RegionActivity.Activities>
+                                <RegionActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </RegionActivity.Activities2>
+                                <RegionActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </RegionActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </RegionActivity>
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="434,79" SLXId="b8bcee8f-edeb-4a6e-89e9-47eb5c2098c0" ToolTip="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                        <x:String>C:\J382\SOLOsoft\Safe to close TRobot.hso</x:String>
+                                        <x:String>True</x:String>
+                                      </scg:List>
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <EmailActivity CommandLine="" Description="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" DisplayName="Send E-Mail" HasConstraints="False" sap:VirtualizedContainerService.HintSize="434,44" SLXId="1e6256c7-9a94-4acc-b92b-570a7447f2aa" ToolTip="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" UserComments="" isActive="False" isCanceled="False" isSetup="True">
+                                <EmailActivity.Arguments>
+                                  <EmailActivityArguments Body="Step 2 Error Correction in progress" From="SGIDNA-DAM@syntheticgenomics.com" Server="aspmx.l.google.com" Subject="Step 2 Error Correction in Progress" To="jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" />
+                                </EmailActivity.Arguments>
+                                <EmailActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </EmailActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </EmailActivity>
+                              <RegionActivity ActivityLabel="" DisplayName="Error Correction Incubation" HasConstraints="False" sap:VirtualizedContainerService.HintSize="434,245" SLXId="29d4f665-3ebb-4652-968d-9ac762361607" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                <RegionActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Directory: 00: ''&#xA;Program: 02: 'Step2b  '" DisplayName="TRobot" HasConstraints="False" sap:VirtualizedContainerService.HintSize="180,94" SLXId="2b881e1a-46b8-46c8-8cfb-05195cedd027" ToolTip="Directory: 00: ''&#xA;Program: 02: 'Step2b  '" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="TRobot" Command="Run">
+                                          <InstrumentActivityArguments.Address>
+                                            <hcc:SLAddress Name="TRobot" Workcell="SoftLinx" />
+                                          </InstrumentActivityArguments.Address>
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="1">
+                                              <x:String>0,2</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                  </scg:List>
+                                </RegionActivity.Activities>
+                                <RegionActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </RegionActivity.Activities2>
+                                <RegionActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </RegionActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </RegionActivity>
+                              <EmailActivity CommandLine="" Description="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" DisplayName="Send E-Mail" HasConstraints="False" sap:VirtualizedContainerService.HintSize="434,44" SLXId="b05f4f1e-f970-419f-8e7b-eb866c8f1e7a" ToolTip="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" UserComments="" isActive="False" isCanceled="False" isSetup="True">
+                                <EmailActivity.Arguments>
+                                  <EmailActivityArguments Body="Step 2 Error Correction is Complete" From="SGIDNA-DAM@syntheticgenomics.com" Server="aspmx.l.google.com" Subject="Step 2 Error Correction is Complete" To="jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" />
+                                </EmailActivity.Arguments>
+                                <EmailActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </EmailActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </EmailActivity>
+                            </scg:List>
+                          </RegionActivity.Activities>
+                          <RegionActivity.Activities2>
+                            <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                          </RegionActivity.Activities2>
+                          <RegionActivity.TimeConstraints>
+                            <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                          </RegionActivity.TimeConstraints>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </RegionActivity>
+                      </scg:List>
+                    </BranchActivity.Activities>
+                    <BranchActivity.Activities2>
+                      <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                    </BranchActivity.Activities2>
+                    <BranchActivity.TimeConstraints>
+                      <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                    </BranchActivity.TimeConstraints>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </BranchActivity>
+                  <BranchActivity ActivityLabel="" DisplayName="Branch 3" HasConstraints="False" sap:VirtualizedContainerService.HintSize="843,2556" SLXId="a466c86e-2e78-4d5f-b3cc-c4e3bb35adbf" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                    <BranchActivity.Activities>
+                      <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                        <RegionActivity ActivityLabel="" DisplayName="PCR2 Step 3" HasConstraints="False" sap:VirtualizedContainerService.HintSize="843,2492" SLXId="3fe90b6c-4e1e-4056-8b78-b457865f10e5" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                          <RegionActivity.Activities>
+                            <scg:List x:TypeArguments="p:Activity" Capacity="32">
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="Open Lid" Description="" DisplayName="TRobot" HasConstraints="False" sap:VirtualizedContainerService.HintSize="767,62" SLXId="4970170e-1663-4a4d-a8f7-2498d860b41e" ToolTip="" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="TRobot" Command="Open Lid">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="TRobot" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="0" />
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <RegionActivity ActivityLabel="" DisplayName="Adjust Error Rx for PCR2 template" HasConstraints="False" sap:VirtualizedContainerService.HintSize="767,230" SLXId="ee55c088-f7a7-42fa-b315-787842d9f0a5" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                <RegionActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\GAM Col5-8 to QC 2.5ul back.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="372,79" SLXId="889bba35-28f2-4b50-8c06-3b6805c22644" ToolTip="Run: C:\J382\SOLOsoft\GAM Col5-8 to QC 2.5ul back.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                          <InstrumentActivityArguments.Address>
+                                            <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                          </InstrumentActivityArguments.Address>
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                              <x:String>C:\J382\SOLOsoft\GAM Col5-8 to QC 2.5ul back.hso</x:String>
+                                              <x:String>True</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                  </scg:List>
+                                </RegionActivity.Activities>
+                                <RegionActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </RegionActivity.Activities2>
+                                <RegionActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </RegionActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </RegionActivity>
+                              <RegionActivity ActivityLabel="" DisplayName="Add PCR2 Mix" HasConstraints="False" sap:VirtualizedContainerService.HintSize="767,230" SLXId="3becf1ed-d127-4632-8e1a-5b1f23d81fab" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                <RegionActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\GAM A3 to Col5-8 47.5ul new tip ea.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="404,79" SLXId="c4082ead-e38e-4ef4-9080-ecb0db84e745" ToolTip="Run: C:\J382\SOLOsoft\GAM A3 to Col5-8 47.5ul new tip ea.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                          <InstrumentActivityArguments.Address>
+                                            <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                          </InstrumentActivityArguments.Address>
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                              <x:String>C:\J382\SOLOsoft\GAM A3 to Col5-8 47.5ul new tip ea.hso</x:String>
+                                              <x:String>True</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                  </scg:List>
+                                </RegionActivity.Activities>
+                                <RegionActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </RegionActivity.Activities2>
+                                <RegionActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </RegionActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </RegionActivity>
+                              <RegionActivity ActivityLabel="" DisplayName="Mix within Targets" HasConstraints="False" sap:VirtualizedContainerService.HintSize="767,563" SLXId="8e9d4218-3d00-433f-a247-c85f2693980a" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                <RegionActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\GAM Mix within Col5.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="329,79" SLXId="3e17fe12-227d-4924-8aec-2d8d21d54eea" ToolTip="Run: C:\J382\SOLOsoft\GAM Mix within Col5.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                          <InstrumentActivityArguments.Address>
+                                            <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                          </InstrumentActivityArguments.Address>
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                              <x:String>C:\J382\SOLOsoft\GAM Mix within Col5.hso</x:String>
+                                              <x:String>True</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\GAM Mix within Col6.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="329,79" SLXId="5a1c780d-3871-42f9-b2e4-28e41a663d97" ToolTip="Run: C:\J382\SOLOsoft\GAM Mix within Col6.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                          <InstrumentActivityArguments.Address>
+                                            <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                          </InstrumentActivityArguments.Address>
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                              <x:String>C:\J382\SOLOsoft\GAM Mix within Col6.hso</x:String>
+                                              <x:String>True</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\GAM Mix within Col7.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="329,79" SLXId="d7ea1c77-ed3e-4234-a930-18b5d7adcc17" ToolTip="Run: C:\J382\SOLOsoft\GAM Mix within Col7.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                          <InstrumentActivityArguments.Address>
+                                            <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                          </InstrumentActivityArguments.Address>
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                              <x:String>C:\J382\SOLOsoft\GAM Mix within Col7.hso</x:String>
+                                              <x:String>True</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\GAM Mix within Col8.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="329,79" SLXId="78cf2b59-7310-453e-9b05-e0d42d636c33" ToolTip="Run: C:\J382\SOLOsoft\GAM Mix within Col8.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                          <InstrumentActivityArguments.Address>
+                                            <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                          </InstrumentActivityArguments.Address>
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                              <x:String>C:\J382\SOLOsoft\GAM Mix within Col8.hso</x:String>
+                                              <x:String>True</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                  </scg:List>
+                                </RegionActivity.Activities>
+                                <RegionActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </RegionActivity.Activities2>
+                                <RegionActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </RegionActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </RegionActivity>
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="767,79" SLXId="f59e32ca-2a31-43ef-ba66-54062e85e16d" ToolTip="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                        <x:String>C:\J382\SOLOsoft\Safe to close TRobot.hso</x:String>
+                                        <x:String>True</x:String>
+                                      </scg:List>
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <EmailActivity CommandLine="" Description="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" DisplayName="Send E-Mail" HasConstraints="False" sap:VirtualizedContainerService.HintSize="767,44" SLXId="93b4df77-279b-4f62-b464-db2ddea8ae91" ToolTip="To: jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" UserComments="" isActive="False" isCanceled="False" isSetup="True">
+                                <EmailActivity.Arguments>
+                                  <EmailActivityArguments Body="Step 3 OsOs2 in Progress" From="SGIDNA-DAM@syntheticgenomics.com" Server="aspmx.l.google.com" Subject="Step 3 OsOs2 in Progress" To="jgill@sgidna.com, alee@sgidna.com, mlewis@sgidna.com, dgibson@sgidna.com" />
+                                </EmailActivity.Arguments>
+                                <EmailActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </EmailActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </EmailActivity>
+                              <ParallelActivity ActivityLabel="" DisplayName="Parallel Activity" HasConstraints="False" sap:VirtualizedContainerService.HintSize="767,865" SLXId="cdae67f6-422b-4074-be5b-ceb95c7e8c58" ToolTip="Run all branches simultaneously." UserComments="" isActive="True" isSetup="True">
+                                <ParallelActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <BranchActivity ActivityLabel="" DisplayName="Branch 1" HasConstraints="False" sap:VirtualizedContainerService.HintSize="180,771" SLXId="0622cd53-f3f7-4b89-8ea9-ad41f9d5a5d9" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                      <BranchActivity.Activities>
+                                        <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                          <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Directory: 02: ''&#xA;Program: 09: 'OS70SH  '" DisplayName="TRobot" HasConstraints="False" sap:VirtualizedContainerService.HintSize="180,94" SLXId="019e00e6-c3f3-4d3f-a8f3-dfe27b0f5aeb" ToolTip="Directory: 02: ''&#xA;Program: 09: 'OS70SH  '" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                            <InstrumentActivity.Arguments>
+                                              <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="TRobot" Command="Run">
+                                                <InstrumentActivityArguments.Address>
+                                                  <hcc:SLAddress Name="TRobot" Workcell="SoftLinx" />
+                                                </InstrumentActivityArguments.Address>
+                                                <InstrumentActivityArguments.Arguments>
+                                                  <scg:List x:TypeArguments="x:Object" Capacity="1">
+                                                    <x:String>2,9</x:String>
+                                                  </scg:List>
+                                                </InstrumentActivityArguments.Arguments>
+                                                <InstrumentActivityArguments.hWnd>
+                                                  <s:IntPtr />
+                                                </InstrumentActivityArguments.hWnd>
+                                              </InstrumentActivityArguments>
+                                            </InstrumentActivity.Arguments>
+                                            <InstrumentActivity.TimeConstraints>
+                                              <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                            </InstrumentActivity.TimeConstraints>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </InstrumentActivity>
+                                        </scg:List>
+                                      </BranchActivity.Activities>
+                                      <BranchActivity.Activities2>
+                                        <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                      </BranchActivity.Activities2>
+                                      <BranchActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </BranchActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </BranchActivity>
+                                    <BranchActivity ActivityLabel="" DisplayName="Branch 2" HasConstraints="False" sap:VirtualizedContainerService.HintSize="391,771" SLXId="73826750-d048-4590-99b8-85ffe78d7f64" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                      <BranchActivity.Activities>
+                                        <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                          <CriticalRegionActivity ActivityLabel="" DisplayName="Dispense QC Plate" HasConstraints="False" sap:VirtualizedContainerService.HintSize="391,707" SLXId="51f69d39-ba72-4d79-8446-2812e55dee8b" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                            <CriticalRegionActivity.Activities>
+                                              <scg:List x:TypeArguments="p:Activity" Capacity="8">
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Move Plate" Description="From: SoftLinx.Solo.Position5&#xA;To: SoftLinx.StackLink.PosA" DisplayName="UpperPlateCrane" HasConstraints="False" sap:VirtualizedContainerService.HintSize="315,94" SLXId="150267d5-6f38-4a94-90c6-51f51ddb4365" ToolTip="From: SoftLinx.Solo.Position5&#xA;To: SoftLinx.StackLink.PosA" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="PlateCrane" Command="Move Plate">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="UpperPlateCrane" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="7">
+                                                          <x:String>SoftLinx.Solo.Position5</x:String>
+                                                          <x:String>SoftLinx.StackLink.PosA</x:String>
+                                                          <x:String>Safe</x:String>
+                                                          <x:String>0</x:String>
+                                                          <x:String></x:String>
+                                                          <x:String>False</x:String>
+                                                          <x:String>False</x:String>
+                                                        </scg:List>
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Return Plate" Description="Return plate from SoftLinx.StackLink.PosA to Stack1." DisplayName="StackLink" HasConstraints="False" sap:VirtualizedContainerService.HintSize="315,79" SLXId="d55970d8-ee98-4888-9ae3-58f37744192b" ToolTip="Return plate from SoftLinx.StackLink.PosA to Stack1." UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="StackLink" Command="Return Plate">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="StackLink" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                                          <x:String>1</x:String>
+                                                          <x:String>SoftLinx.StackLink.PosA</x:String>
+                                                        </scg:List>
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Dispense" Description="Dispense from Stack2 to SoftLinx.StackLink.PosA." DisplayName="StackLink" HasConstraints="False" sap:VirtualizedContainerService.HintSize="315,79" SLXId="40d57e21-d6c0-4a5a-9b4c-aaee5a192c91" ToolTip="Dispense from Stack2 to SoftLinx.StackLink.PosA." UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="StackLink" Command="Dispense">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="StackLink" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="4">
+                                                          <x:String>2</x:String>
+                                                          <x:String>0</x:String>
+                                                          <x:String>SoftLinx.StackLink.PosA</x:String>
+                                                          <x:String></x:String>
+                                                        </scg:List>
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Move Plate" Description="From: SoftLinx.StackLink.PosA&#xA;To: SoftLinx.Solo.Position5" DisplayName="UpperPlateCrane" HasConstraints="False" sap:VirtualizedContainerService.HintSize="315,94" SLXId="68497156-a27d-4cd3-8460-ff50db2880cb" ToolTip="From: SoftLinx.StackLink.PosA&#xA;To: SoftLinx.Solo.Position5" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="PlateCrane" Command="Move Plate">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="UpperPlateCrane" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="7">
+                                                          <x:String>SoftLinx.StackLink.PosA</x:String>
+                                                          <x:String>SoftLinx.Solo.Position5</x:String>
+                                                          <x:String>Safe</x:String>
+                                                          <x:String>0</x:String>
+                                                          <x:String></x:String>
+                                                          <x:String>False</x:String>
+                                                          <x:String>False</x:String>
+                                                        </scg:List>
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Move Crane" Description="MoveCrane to 'SoftLinx.UpperPlateCrane.Safe'" DisplayName="UpperPlateCrane" HasConstraints="False" sap:VirtualizedContainerService.HintSize="315,82" SLXId="c4fb5600-740b-4efd-a515-f7401207c265" ToolTip="MoveCrane to 'SoftLinx.UpperPlateCrane.Safe'" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="PlateCrane" Command="Move Crane">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="UpperPlateCrane" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="1">
+                                                          <x:String>SoftLinx.UpperPlateCrane.Safe</x:String>
+                                                        </scg:List>
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                              </scg:List>
+                                            </CriticalRegionActivity.Activities>
+                                            <CriticalRegionActivity.Activities2>
+                                              <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                            </CriticalRegionActivity.Activities2>
+                                            <CriticalRegionActivity.TimeConstraints>
+                                              <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                            </CriticalRegionActivity.TimeConstraints>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </CriticalRegionActivity>
+                                        </scg:List>
+                                      </BranchActivity.Activities>
+                                      <BranchActivity.Activities2>
+                                        <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                      </BranchActivity.Activities2>
+                                      <BranchActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </BranchActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </BranchActivity>
+                                  </scg:List>
+                                </ParallelActivity.Activities>
+                                <ParallelActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </ParallelActivity.Activities2>
+                                <ParallelActivity.Arguments>
+                                  <ParallelActivityArguments BranchOrder="" IsByVariable="False" IsOrdered="False" IsStandard="True" VariableName="" />
+                                </ParallelActivity.Arguments>
+                                <ParallelActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </ParallelActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ParallelActivity>
+                              <EmailActivity CommandLine="" Description="To: kentboles@gmail.com" DisplayName="Send E-Mail" HasConstraints="False" sap:VirtualizedContainerService.HintSize="767,44" SLXId="77f6244a-28c9-4905-9a88-ce775e136338" ToolTip="To: kentboles@gmail.com" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <EmailActivity.Arguments>
+                                  <EmailActivityArguments Body="Come check me out!" From="DBC@syntheticgenomics.com" Server="aspmx.l.google.com" Subject="PCR2 is done" To="kentboles@gmail.com" />
+                                </EmailActivity.Arguments>
+                                <EmailActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </EmailActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </EmailActivity>
+                            </scg:List>
+                          </RegionActivity.Activities>
+                          <RegionActivity.Activities2>
+                            <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                          </RegionActivity.Activities2>
+                          <RegionActivity.TimeConstraints>
+                            <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                          </RegionActivity.TimeConstraints>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </RegionActivity>
+                      </scg:List>
+                    </BranchActivity.Activities>
+                    <BranchActivity.Activities2>
+                      <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                    </BranchActivity.Activities2>
+                    <BranchActivity.TimeConstraints>
+                      <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                    </BranchActivity.TimeConstraints>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </BranchActivity>
+                  <BranchActivity ActivityLabel="" DisplayName="Branch 4" HasConstraints="False" sap:VirtualizedContainerService.HintSize="548,2556" SLXId="d6aa3e1b-c15d-45dc-a5b1-4ae9b53878dd" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                    <BranchActivity.Activities>
+                      <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                        <RegionActivity ActivityLabel="" DisplayName="Translation Step 4" HasConstraints="False" sap:VirtualizedContainerService.HintSize="548,1201" SLXId="dbf00387-27b0-4a98-85e7-f67c503643c2" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                          <RegionActivity.Activities>
+                            <scg:List x:TypeArguments="p:Activity" Capacity="16">
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="Open Lid" Description="" DisplayName="TRobot" HasConstraints="False" sap:VirtualizedContainerService.HintSize="472,62" SLXId="9c7a1405-42c1-47d1-8522-e23965d372dd" ToolTip="" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="TRobot" Command="Open Lid">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="TRobot" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="0" />
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <RegionActivity ActivityLabel="" DisplayName="Add Translation Mix" HasConstraints="False" sap:VirtualizedContainerService.HintSize="472,230" SLXId="0638742a-8d54-4c00-b394-a00a0d9048c9" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                <RegionActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\GAM A4 to Col9 Col11 21.5ul.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="369,79" SLXId="fbef22bb-33af-4a55-8cb4-3317f5182a47" ToolTip="Run: C:\J382\SOLOsoft\GAM A4 to Col9 Col11 21.5ul.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                          <InstrumentActivityArguments.Address>
+                                            <hcc:SLAddress x:Name="__ReferenceID1" Name="Solo" Workcell="SoftLinx" />
+                                          </InstrumentActivityArguments.Address>
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                              <x:String>C:\J382\SOLOsoft\GAM A4 to Col9 Col11 21.5ul.hso</x:String>
+                                              <x:String>True</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                  </scg:List>
+                                </RegionActivity.Activities>
+                                <RegionActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </RegionActivity.Activities2>
+                                <RegionActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </RegionActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </RegionActivity>
+                              <RegionActivity ActivityLabel="" DisplayName="Add PCR2 to Translation Mix" HasConstraints="False" sap:VirtualizedContainerService.HintSize="472,230" SLXId="b1102767-9a54-4b0f-9ccd-52bc123d6a50" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                <RegionActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\GAM Col5 7 to Col9 11 3.5ul w QC.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="396,79" SLXId="d5a1a4fe-0c3a-4338-b21d-3bdd808cfb61" ToolTip="Run: C:\J382\SOLOsoft\GAM Col5 7 to Col9 11 3.5ul w QC.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments Address="{x:Reference __ReferenceID1}" ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                              <x:String>C:\J382\SOLOsoft\GAM Col5 7 to Col9 11 3.5ul w QC.hso</x:String>
+                                              <x:String>True</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                  </scg:List>
+                                </RegionActivity.Activities>
+                                <RegionActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </RegionActivity.Activities2>
+                                <RegionActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </RegionActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </RegionActivity>
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="472,79" SLXId="1f3b1891-ad93-4315-b4d2-5d692a87ee86" ToolTip="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                        <x:String>C:\J382\SOLOsoft\Safe to close TRobot.hso</x:String>
+                                        <x:String>True</x:String>
+                                      </scg:List>
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <RegionActivity ActivityLabel="" DisplayName="Translation 3h@37C" HasConstraints="False" sap:VirtualizedContainerService.HintSize="472,245" SLXId="693b9867-c0da-4bf9-85d1-9e07bce1a767" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                <RegionActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Directory: 09: ''&#xA;Program: 07: '3hr37C  '" DisplayName="TRobot" HasConstraints="False" sap:VirtualizedContainerService.HintSize="180,94" SLXId="9fc6eea7-7859-4d5d-8540-7fb1d92b4353" ToolTip="Directory: 09: ''&#xA;Program: 07: '3hr37C  '" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                      <InstrumentActivity.Arguments>
+                                        <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="TRobot" Command="Run">
+                                          <InstrumentActivityArguments.Address>
+                                            <hcc:SLAddress Name="TRobot" Workcell="SoftLinx" />
+                                          </InstrumentActivityArguments.Address>
+                                          <InstrumentActivityArguments.Arguments>
+                                            <scg:List x:TypeArguments="x:Object" Capacity="1">
+                                              <x:String>9,7</x:String>
+                                            </scg:List>
+                                          </InstrumentActivityArguments.Arguments>
+                                          <InstrumentActivityArguments.hWnd>
+                                            <s:IntPtr />
+                                          </InstrumentActivityArguments.hWnd>
+                                        </InstrumentActivityArguments>
+                                      </InstrumentActivity.Arguments>
+                                      <InstrumentActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </InstrumentActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </InstrumentActivity>
+                                  </scg:List>
+                                </RegionActivity.Activities>
+                                <RegionActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </RegionActivity.Activities2>
+                                <RegionActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </RegionActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </RegionActivity>
+                              <EmailActivity CommandLine="" Description="To: kentboles@gmail.com" DisplayName="Send E-Mail" HasConstraints="False" sap:VirtualizedContainerService.HintSize="472,44" SLXId="c50fd2ef-a227-4fbd-b880-1cb279b8eaf3" ToolTip="To: kentboles@gmail.com" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <EmailActivity.Arguments>
+                                  <EmailActivityArguments Body="Proceeding to Transformation. &#xA;" From="SGIDNA-DAM@syntheticgenomics.com" Server="aspmx.l.google.com" Subject="PhiX Assembly Complete" To="kentboles@gmail.com" />
+                                </EmailActivity.Arguments>
+                                <EmailActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </EmailActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </EmailActivity>
+                            </scg:List>
+                          </RegionActivity.Activities>
+                          <RegionActivity.Activities2>
+                            <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                          </RegionActivity.Activities2>
+                          <RegionActivity.TimeConstraints>
+                            <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                          </RegionActivity.TimeConstraints>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </RegionActivity>
+                      </scg:List>
+                    </BranchActivity.Activities>
+                    <BranchActivity.Activities2>
+                      <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                    </BranchActivity.Activities2>
+                    <BranchActivity.TimeConstraints>
+                      <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                    </BranchActivity.TimeConstraints>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </BranchActivity>
+                  <BranchActivity ActivityLabel="" DisplayName="Branch 5" HasConstraints="False" sap:VirtualizedContainerService.HintSize="845,2556" SLXId="aef268a5-fbab-4bdf-bd95-176c8884aa5c" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                    <BranchActivity.Activities>
+                      <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                        <RegionActivity ActivityLabel="" DisplayName="Transformation Step5" HasConstraints="False" sap:VirtualizedContainerService.HintSize="845,1610" SLXId="0541090b-ddb9-45dd-a8b2-531338dad705" ToolTip="" UserComments="" isActive="False" isSetup="True">
+                          <RegionActivity.Activities>
+                            <scg:List x:TypeArguments="p:Activity" Capacity="16">
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="Open Lid" Description="" DisplayName="TRobot" HasConstraints="False" sap:VirtualizedContainerService.HintSize="769,62" SLXId="5590fc02-2da4-4bdd-b792-3e275d4d4500" ToolTip="" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="TRobot" Command="Open Lid">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="TRobot" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="0" />
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\GAM Step 6H.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="769,79" SLXId="3481a744-1186-4f97-9467-b91146382c11" ToolTip="Run: C:\J382\SOLOsoft\GAM Step 6H.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                        <x:String>C:\J382\SOLOsoft\GAM Step 6H.hso</x:String>
+                                        <x:String>True</x:String>
+                                      </scg:List>
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="769,79" SLXId="3b82170f-495c-403e-a649-35e37cd1d5d2" ToolTip="Run: C:\J382\SOLOsoft\Safe to close TRobot.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                        <x:String>C:\J382\SOLOsoft\Safe to close TRobot.hso</x:String>
+                                        <x:String>True</x:String>
+                                      </scg:List>
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <ParallelActivity ActivityLabel="" DisplayName="Heat Shock and Dispense SOC plate" HasConstraints="False" sap:VirtualizedContainerService.HintSize="769,862" SLXId="ba68f567-d202-4acb-a236-3d4e7ad24c04" ToolTip="Run all branches simultaneously." UserComments="" isActive="True" isSetup="True">
+                                <ParallelActivity.Activities>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                    <BranchActivity ActivityLabel="" DisplayName="Branch 1" HasConstraints="False" sap:VirtualizedContainerService.HintSize="180,768" SLXId="a72f8c89-1acd-47e8-bdaa-0053e6b5bcc1" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                      <BranchActivity.Activities>
+                                        <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                          <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Directory: 05: ''&#xA;Program: 00: 'shock4s '" DisplayName="TRobot" HasConstraints="False" sap:VirtualizedContainerService.HintSize="180,94" SLXId="73ab8e80-383e-48c5-977b-9f85cdbada65" ToolTip="Directory: 05: ''&#xA;Program: 00: 'shock4s '" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                            <InstrumentActivity.Arguments>
+                                              <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="TRobot" Command="Run">
+                                                <InstrumentActivityArguments.Address>
+                                                  <hcc:SLAddress Name="TRobot" Workcell="SoftLinx" />
+                                                </InstrumentActivityArguments.Address>
+                                                <InstrumentActivityArguments.Arguments>
+                                                  <scg:List x:TypeArguments="x:Object" Capacity="1">
+                                                    <x:String>5,0</x:String>
+                                                  </scg:List>
+                                                </InstrumentActivityArguments.Arguments>
+                                                <InstrumentActivityArguments.hWnd>
+                                                  <s:IntPtr />
+                                                </InstrumentActivityArguments.hWnd>
+                                              </InstrumentActivityArguments>
+                                            </InstrumentActivity.Arguments>
+                                            <InstrumentActivity.TimeConstraints>
+                                              <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                            </InstrumentActivity.TimeConstraints>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </InstrumentActivity>
+                                        </scg:List>
+                                      </BranchActivity.Activities>
+                                      <BranchActivity.Activities2>
+                                        <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                      </BranchActivity.Activities2>
+                                      <BranchActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </BranchActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </BranchActivity>
+                                    <BranchActivity ActivityLabel="" DisplayName="Branch 2" HasConstraints="False" sap:VirtualizedContainerService.HintSize="469,768" SLXId="9cdb1677-fdc8-408c-9431-974b1d53cb48" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                      <BranchActivity.Activities>
+                                        <scg:List x:TypeArguments="p:Activity" Capacity="4">
+                                          <CriticalRegionActivity ActivityLabel="" DisplayName="Dispense SOC Plate" HasConstraints="False" sap:VirtualizedContainerService.HintSize="469,704" SLXId="183c4f6d-6113-41d6-be3c-51cc8f628d2c" ToolTip="" UserComments="" isActive="True" isSetup="True">
+                                            <CriticalRegionActivity.Activities>
+                                              <scg:List x:TypeArguments="p:Activity" Capacity="8">
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Move Plate" Description="From: SoftLinx.LowerPlateCrane.Stack3&#xA;To: SoftLinx.SGI.ElevatorBottom" DisplayName="LowerPlateCrane" HasConstraints="False" sap:VirtualizedContainerService.HintSize="393,94" SLXId="1e774af2-a6d8-4fe8-9d3c-239858ec4782" ToolTip="From: SoftLinx.LowerPlateCrane.Stack3&#xA;To: SoftLinx.SGI.ElevatorBottom" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="PlateCrane" Command="Move Plate">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="LowerPlateCrane" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="7">
+                                                          <x:String>SoftLinx.LowerPlateCrane.Stack3</x:String>
+                                                          <x:String>SoftLinx.SGI.ElevatorBottom</x:String>
+                                                          <x:String>Safe</x:String>
+                                                          <x:String>0</x:String>
+                                                          <x:String></x:String>
+                                                          <x:String>False</x:String>
+                                                          <x:String>False</x:String>
+                                                        </scg:List>
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Lift Plate" Description="" DisplayName="SGI" HasConstraints="False" sap:VirtualizedContainerService.HintSize="393,79" SLXId="09019e57-5336-40ba-8f18-9a29abffdbc0" ToolTip="" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="SGI" Command="Lift Plate">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="SGI" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="0" />
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Move Plate" Description="MovePlate from SoftLinx.Aspirator.Nest to SoftLinx.StackLink.PosA." DisplayName="StackLink" HasConstraints="False" sap:VirtualizedContainerService.HintSize="393,79" SLXId="1c59ebba-29d6-4939-8290-8c99fc2ae056" ToolTip="MovePlate from SoftLinx.Aspirator.Nest to SoftLinx.StackLink.PosA." UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="StackLink" Command="Move Plate">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="StackLink" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                                          <x:String>SoftLinx.Aspirator.Nest</x:String>
+                                                          <x:String>SoftLinx.StackLink.PosA</x:String>
+                                                        </scg:List>
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Move Plate" Description="From: SoftLinx.StackLink.PosA&#xA;To: SoftLinx.Solo.Position6" DisplayName="UpperPlateCrane" HasConstraints="False" sap:VirtualizedContainerService.HintSize="393,94" SLXId="e4f6e319-8650-406b-a0b6-8fe9cf12993a" ToolTip="From: SoftLinx.StackLink.PosA&#xA;To: SoftLinx.Solo.Position6" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="PlateCrane" Command="Move Plate">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="UpperPlateCrane" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="7">
+                                                          <x:String>SoftLinx.StackLink.PosA</x:String>
+                                                          <x:String>SoftLinx.Solo.Position6</x:String>
+                                                          <x:String>Safe</x:String>
+                                                          <x:String>0</x:String>
+                                                          <x:String></x:String>
+                                                          <x:String>False</x:String>
+                                                          <x:String>False</x:String>
+                                                        </scg:List>
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                                <InstrumentActivity IconPath="{x:Null}" CommandLine="Move Crane" Description="MoveCrane to 'SoftLinx.UpperPlateCrane.Safe'" DisplayName="UpperPlateCrane" HasConstraints="False" sap:VirtualizedContainerService.HintSize="393,79" SLXId="dc37cd15-4129-46a3-a178-a00330f25c52" ToolTip="MoveCrane to 'SoftLinx.UpperPlateCrane.Safe'" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                                  <InstrumentActivity.Arguments>
+                                                    <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="PlateCrane" Command="Move Crane">
+                                                      <InstrumentActivityArguments.Address>
+                                                        <hcc:SLAddress Name="UpperPlateCrane" Workcell="SoftLinx" />
+                                                      </InstrumentActivityArguments.Address>
+                                                      <InstrumentActivityArguments.Arguments>
+                                                        <scg:List x:TypeArguments="x:Object" Capacity="1">
+                                                          <x:String>SoftLinx.UpperPlateCrane.Safe</x:String>
+                                                        </scg:List>
+                                                      </InstrumentActivityArguments.Arguments>
+                                                      <InstrumentActivityArguments.hWnd>
+                                                        <s:IntPtr />
+                                                      </InstrumentActivityArguments.hWnd>
+                                                    </InstrumentActivityArguments>
+                                                  </InstrumentActivity.Arguments>
+                                                  <InstrumentActivity.TimeConstraints>
+                                                    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                                  </InstrumentActivity.TimeConstraints>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </InstrumentActivity>
+                                              </scg:List>
+                                            </CriticalRegionActivity.Activities>
+                                            <CriticalRegionActivity.Activities2>
+                                              <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                            </CriticalRegionActivity.Activities2>
+                                            <CriticalRegionActivity.TimeConstraints>
+                                              <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                            </CriticalRegionActivity.TimeConstraints>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </CriticalRegionActivity>
+                                        </scg:List>
+                                      </BranchActivity.Activities>
+                                      <BranchActivity.Activities2>
+                                        <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                      </BranchActivity.Activities2>
+                                      <BranchActivity.TimeConstraints>
+                                        <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                      </BranchActivity.TimeConstraints>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </BranchActivity>
+                                  </scg:List>
+                                </ParallelActivity.Activities>
+                                <ParallelActivity.Activities2>
+                                  <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                                </ParallelActivity.Activities2>
+                                <ParallelActivity.Arguments>
+                                  <ParallelActivityArguments BranchOrder="" IsByVariable="False" IsOrdered="False" IsStandard="True" VariableName="" />
+                                </ParallelActivity.Arguments>
+                                <ParallelActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </ParallelActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ParallelActivity>
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="ResetLoopCounts" Description="" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="769,62" SLXId="f1d4e9ae-ad31-409d-8b53-80f786700e6e" ToolTip="" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="ResetLoopCounts">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="0" />
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <InstrumentActivity IconPath="{x:Null}" CommandLine="Run" Description="Run: C:\J382\SOLOsoft\GAM Step 6B.hso, True" DisplayName="Solo" HasConstraints="False" sap:VirtualizedContainerService.HintSize="769,79" SLXId="e332640a-f2e4-440c-81c4-6736047067c4" ToolTip="Run: C:\J382\SOLOsoft\GAM Step 6B.hso, True" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <InstrumentActivity.Arguments>
+                                  <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="Solo" Command="Run">
+                                    <InstrumentActivityArguments.Address>
+                                      <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+                                    </InstrumentActivityArguments.Address>
+                                    <InstrumentActivityArguments.Arguments>
+                                      <scg:List x:TypeArguments="x:Object" Capacity="2">
+                                        <x:String>C:\J382\SOLOsoft\GAM Step 6B.hso</x:String>
+                                        <x:String>True</x:String>
+                                      </scg:List>
+                                    </InstrumentActivityArguments.Arguments>
+                                    <InstrumentActivityArguments.hWnd>
+                                      <s:IntPtr />
+                                    </InstrumentActivityArguments.hWnd>
+                                  </InstrumentActivityArguments>
+                                </InstrumentActivity.Arguments>
+                                <InstrumentActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </InstrumentActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </InstrumentActivity>
+                              <EmailActivity CommandLine="" Description="To: kentboles@gmail.com" DisplayName="Send E-Mail" HasConstraints="False" sap:VirtualizedContainerService.HintSize="769,44" SLXId="bb0fe15b-4b5b-4b00-b709-bac31905e70b" ToolTip="To: kentboles@gmail.com" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+                                <EmailActivity.Arguments>
+                                  <EmailActivityArguments Body="Pls remove the 2ml SOC block from Position 6 and incubate at 37C, 225 rpm, 1hr.&#xA;" From="SGIDNA-DAM@syntheticgenomics.com" Server="aspmx.l.google.com" Subject="PhiX Transformation Complete" To="kentboles@gmail.com" />
+                                </EmailActivity.Arguments>
+                                <EmailActivity.TimeConstraints>
+                                  <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                                </EmailActivity.TimeConstraints>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </EmailActivity>
+                            </scg:List>
+                          </RegionActivity.Activities>
+                          <RegionActivity.Activities2>
+                            <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                          </RegionActivity.Activities2>
+                          <RegionActivity.TimeConstraints>
+                            <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                          </RegionActivity.TimeConstraints>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </RegionActivity>
+                      </scg:List>
+                    </BranchActivity.Activities>
+                    <BranchActivity.Activities2>
+                      <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+                    </BranchActivity.Activities2>
+                    <BranchActivity.TimeConstraints>
+                      <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+                    </BranchActivity.TimeConstraints>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </BranchActivity>
+                </scg:List>
+              </ParallelActivity.Activities>
+              <ParallelActivity.Activities2>
+                <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+              </ParallelActivity.Activities2>
+              <ParallelActivity.Arguments>
+                <ParallelActivityArguments BranchOrder="12345" IsByVariable="False" IsOrdered="True" IsStandard="False" VariableName="" />
+              </ParallelActivity.Arguments>
+              <ParallelActivity.TimeConstraints>
+                <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+              </ParallelActivity.TimeConstraints>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ParallelActivity>
+          </scg:List>
+        </LoopActivity.Activities>
+        <LoopActivity.Activities2>
+          <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+        </LoopActivity.Activities2>
+        <LoopActivity.Arguments>
+          <LoopActivityArguments CountExpression="1" IsBoolean="False" IsCounted="True" IsInfinite="False" TrueExpression="" />
+        </LoopActivity.Arguments>
+        <LoopActivity.TimeConstraints>
+          <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+        </LoopActivity.TimeConstraints>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </LoopActivity>
+      <InstrumentActivity IconPath="{x:Null}" CommandLine="Shut Off" Description="Shut Off " DisplayName="TorreyPinesRIC20" HasConstraints="False" sap:VirtualizedContainerService.HintSize="3849,64" SLXId="8b721ad7-91f0-44a7-b355-e4a4af047e27" ToolTip="Shut Off " UserComments="" isActive="True" isCanceled="False" isSetup="True">
+        <InstrumentActivity.Arguments>
+          <InstrumentActivityArguments Address="{x:Reference __ReferenceID2}" ResultVariable="{x:Null}" AddinType="TorreyPinesRIC20" Command="Shut Off">
+            <InstrumentActivityArguments.Arguments>
+              <scg:List x:TypeArguments="x:Object" Capacity="0" />
+            </InstrumentActivityArguments.Arguments>
+            <InstrumentActivityArguments.hWnd>
+              <s:IntPtr />
+            </InstrumentActivityArguments.hWnd>
+          </InstrumentActivityArguments>
+        </InstrumentActivity.Arguments>
+        <InstrumentActivity.TimeConstraints>
+          <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+        </InstrumentActivity.TimeConstraints>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </InstrumentActivity>
+      <InstrumentActivity IconPath="{x:Null}" CommandLine="Call Process Complete" Description="" DisplayName="SGI" HasConstraints="False" sap:VirtualizedContainerService.HintSize="3849,64" SLXId="ddc46c11-1fdd-4ef7-b716-f601643b77b9" ToolTip="" UserComments="" isActive="True" isCanceled="False" isSetup="True">
+        <InstrumentActivity.Arguments>
+          <InstrumentActivityArguments ResultVariable="{x:Null}" AddinType="SGI" Command="Call Process Complete">
+            <InstrumentActivityArguments.Address>
+              <hcc:SLAddress Name="SGI" Workcell="SoftLinx" />
+            </InstrumentActivityArguments.Address>
+            <InstrumentActivityArguments.Arguments>
+              <scg:List x:TypeArguments="x:Object" Capacity="0" />
+            </InstrumentActivityArguments.Arguments>
+            <InstrumentActivityArguments.hWnd>
+              <s:IntPtr />
+            </InstrumentActivityArguments.hWnd>
+          </InstrumentActivityArguments>
+        </InstrumentActivity.Arguments>
+        <InstrumentActivity.TimeConstraints>
+          <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+        </InstrumentActivity.TimeConstraints>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </InstrumentActivity>
+    </scg:List>
+  </Protocol.Activities>
+  <Protocol.Activities2>
+    <scg:List x:TypeArguments="p:Activity" Capacity="0" />
+  </Protocol.Activities2>
+  <Protocol.InitialValues>
+    <scg:Dictionary x:TypeArguments="x:String, hwab:Variable" />
+  </Protocol.InitialValues>
+  <Protocol.Interfaces>
+    <hwab:Interface x:Key="{x:Reference __ReferenceID3}" AddinType="Plates">
+      <hwab:Interface.Address>
+        <hcc:SLAddress x:Name="__ReferenceID3" Name="Plates" Workcell="SoftLinx" />
+      </hwab:Interface.Address>
+      <hwab:Interface.SetupData>
+        <x:Array Type="x:String">
+          <x:String>SoftLinx.LowerPlateCrane.Stack3=2m culture block</x:String>
+          <x:String>SoftLinx.LowerPlateCrane.Stack2=Costar 96 Polystyrene</x:String>
+          <x:String>SoftLinx.LowerPlateCrane.Stack1=Depro Plate</x:String>
+          <x:String>SoftLinx.StackLink.Stack2=TipBox-G100uL</x:String>
+        </x:Array>
+      </hwab:Interface.SetupData>
+    </hwab:Interface>
+    <hwab:Interface x:Key="{x:Reference __ReferenceID4}" SetupData="{x:Null}" AddinType="PlateCrane">
+      <hwab:Interface.Address>
+        <hcc:SLAddress x:Name="__ReferenceID4" Name="UpperPlateCrane" Workcell="SoftLinx" />
+      </hwab:Interface.Address>
+    </hwab:Interface>
+    <hwab:Interface x:Key="{x:Reference __ReferenceID5}" SetupData="{x:Null}" AddinType="PlateCrane">
+      <hwab:Interface.Address>
+        <hcc:SLAddress x:Name="__ReferenceID5" Name="LowerPlateCrane" Workcell="SoftLinx" />
+      </hwab:Interface.Address>
+    </hwab:Interface>
+    <hwab:Interface x:Key="{x:Reference __ReferenceID6}" SetupData="{x:Array Type=x:String}" AddinType="SGI">
+      <hwab:Interface.Address>
+        <hcc:SLAddress x:Name="__ReferenceID6" Name="SGI" Workcell="SoftLinx" />
+      </hwab:Interface.Address>
+    </hwab:Interface>
+    <hwab:Interface x:Key="{x:Reference __ReferenceID7}" SetupData="{x:Null}" AddinType="StackLink">
+      <hwab:Interface.Address>
+        <hcc:SLAddress x:Name="__ReferenceID7" Name="StackLink" Workcell="SoftLinx" />
+      </hwab:Interface.Address>
+    </hwab:Interface>
+    <hwab:Interface x:Key="{x:Reference __ReferenceID8}" SetupData="{x:Array Type=x:String}" AddinType="TRobot">
+      <hwab:Interface.Address>
+        <hcc:SLAddress x:Name="__ReferenceID8" Name="TRobot" Workcell="SoftLinx" />
+      </hwab:Interface.Address>
+    </hwab:Interface>
+    <hwab:Interface x:Key="{x:Reference __ReferenceID9}" SetupData="{x:Array Type=x:String}" AddinType="TorreyPinesRIC20">
+      <hwab:Interface.Address>
+        <hcc:SLAddress x:Name="__ReferenceID9" Name="TorreyPinesRIC20" Workcell="SoftLinx" />
+      </hwab:Interface.Address>
+    </hwab:Interface>
+    <hwab:Interface x:Key="{x:Reference __ReferenceID10}" SetupData="{x:Array Type=x:String}" AddinType="Solo">
+      <hwab:Interface.Address>
+        <hcc:SLAddress x:Name="__ReferenceID10" Name="Solo" Workcell="SoftLinx" />
+      </hwab:Interface.Address>
+    </hwab:Interface>
+    <hwab:Interface x:Key="{x:Reference __ReferenceID11}" SetupData="{x:Null}" AddinType="EatonPLC">
+      <hwab:Interface.Address>
+        <hcc:SLAddress x:Name="__ReferenceID11" Name="EatonPLC" Workcell="SoftLinx" />
+      </hwab:Interface.Address>
+    </hwab:Interface>
+  </Protocol.Interfaces>
+  <Protocol.TimeConstraints>
+    <scg:List x:TypeArguments="hwab:TimeConstraint" Capacity="0" />
+  </Protocol.TimeConstraints>
+  <Protocol.Variables>
+    <hwab:VariableList SLXHost="{x:Null}">
+      <hwab:Variable x:TypeArguments="hwab:Interface" Value="{x:Reference __ReferenceID12}" x:Key="SoftLinx.Plates" Name="SoftLinx.Plates" Prompt="False">
+        <hwab:Variable.Default>
+          <hwab:Interface SetupData="{x:Null}" x:Name="__ReferenceID12" AddinType="Plates">
+            <hwab:Interface.Address>
+              <hcc:SLAddress Name="Plates" Workcell="SoftLinx" />
+            </hwab:Interface.Address>
+          </hwab:Interface>
+        </hwab:Variable.Default>
+      </hwab:Variable>
+      <hwab:Variable x:TypeArguments="hwab:Interface" Value="{x:Reference __ReferenceID13}" x:Key="SoftLinx.Solo" Name="SoftLinx.Solo" Prompt="False">
+        <hwab:Variable.Default>
+          <hwab:Interface SetupData="{x:Null}" x:Name="__ReferenceID13" AddinType="Solo">
+            <hwab:Interface.Address>
+              <hcc:SLAddress Name="Solo" Workcell="SoftLinx" />
+            </hwab:Interface.Address>
+          </hwab:Interface>
+        </hwab:Variable.Default>
+      </hwab:Variable>
+      <hwab:Variable x:TypeArguments="hwab:Interface" Value="{x:Reference __ReferenceID14}" x:Key="SoftLinx.TRobot" Name="SoftLinx.TRobot" Prompt="False">
+        <hwab:Variable.Default>
+          <hwab:Interface SetupData="{x:Null}" x:Name="__ReferenceID14" AddinType="TRobot">
+            <hwab:Interface.Address>
+              <hcc:SLAddress Name="TRobot" Workcell="SoftLinx" />
+            </hwab:Interface.Address>
+          </hwab:Interface>
+        </hwab:Variable.Default>
+      </hwab:Variable>
+      <hwab:Variable x:TypeArguments="hwab:Interface" Value="{x:Reference __ReferenceID15}" x:Key="SoftLinx.TorreyPinesRIC20" Name="SoftLinx.TorreyPinesRIC20" Prompt="False">
+        <hwab:Variable.Default>
+          <hwab:Interface Address="{x:Reference __ReferenceID2}" SetupData="{x:Null}" x:Name="__ReferenceID15" AddinType="TorreyPinesRIC20" />
+        </hwab:Variable.Default>
+      </hwab:Variable>
+      <hwab:Variable x:TypeArguments="x:Double" x:Key="numSamples" Default="8" Name="numSamples" Prompt="False" Value="8" />
+      <hwab:Variable x:TypeArguments="hwab:Interface" Value="{x:Reference __ReferenceID16}" x:Key="SoftLinx.SGI" Name="SoftLinx.SGI" Prompt="False">
+        <hwab:Variable.Default>
+          <hwab:Interface SetupData="{x:Array Type=x:String}" x:Name="__ReferenceID16" AddinType="SGI">
+            <hwab:Interface.Address>
+              <hcc:SLAddress Name="SGI" Workcell="SoftLinx" />
+            </hwab:Interface.Address>
+          </hwab:Interface>
+        </hwab:Variable.Default>
+      </hwab:Variable>
+      <hwab:Variable x:TypeArguments="x:Double" x:Key="TRobotProg1" Default="6" Name="TRobotProg1" Prompt="True" Value="6" />
+      <hwab:Variable x:TypeArguments="x:Double" x:Key="TRobotProg2" Default="7" Name="TRobotProg2" Prompt="True" Value="7" />
+      <hwab:Variable x:TypeArguments="x:String" x:Key="soloErrorMsg" Default="Solo unexpectedly ran out of tips!" Name="soloErrorMsg" Prompt="False" Value="Solo unexpectedly ran out of tips!" />
+      <hwab:Variable x:TypeArguments="x:Double" x:Key="NumPlates" Default="0" Name="NumPlates" Prompt="True" Value="0" />
+      <hwab:Variable x:TypeArguments="x:Double" x:Key="PoolingMethod" Default="0" Name="PoolingMethod" Prompt="True" Value="0" />
+      <hwab:Variable x:TypeArguments="hwab:Interface" Value="{x:Reference __ReferenceID17}" x:Key="SoftLinx.UpperPlateCrane" Name="SoftLinx.UpperPlateCrane" Prompt="False">
+        <hwab:Variable.Default>
+          <hwab:Interface SetupData="{x:Null}" x:Name="__ReferenceID17" AddinType="PlateCrane">
+            <hwab:Interface.Address>
+              <hcc:SLAddress Name="UpperPlateCrane" Workcell="SoftLinx" />
+            </hwab:Interface.Address>
+          </hwab:Interface>
+        </hwab:Variable.Default>
+      </hwab:Variable>
+      <hwab:Variable x:TypeArguments="hwab:Interface" Value="{x:Reference __ReferenceID18}" x:Key="SoftLinx.StackLink" Name="SoftLinx.StackLink" Prompt="False">
+        <hwab:Variable.Default>
+          <hwab:Interface SetupData="{x:Null}" x:Name="__ReferenceID18" AddinType="StackLink">
+            <hwab:Interface.Address>
+              <hcc:SLAddress Name="StackLink" Workcell="SoftLinx" />
+            </hwab:Interface.Address>
+          </hwab:Interface>
+        </hwab:Variable.Default>
+      </hwab:Variable>
+      <hwab:Variable x:TypeArguments="hwab:Interface" Value="{x:Reference __ReferenceID19}" x:Key="SoftLinx.LowerPlateCrane" Name="SoftLinx.LowerPlateCrane" Prompt="False">
+        <hwab:Variable.Default>
+          <hwab:Interface SetupData="{x:Null}" x:Name="__ReferenceID19" AddinType="PlateCrane">
+            <hwab:Interface.Address>
+              <hcc:SLAddress Name="LowerPlateCrane" Workcell="SoftLinx" />
+            </hwab:Interface.Address>
+          </hwab:Interface>
+        </hwab:Variable.Default>
+      </hwab:Variable>
+      <hwab:Variable x:TypeArguments="hwab:Interface" Value="{x:Reference __ReferenceID20}" x:Key="SoftLinx.EatonPLC" Name="SoftLinx.EatonPLC" Prompt="False">
+        <hwab:Variable.Default>
+          <hwab:Interface SetupData="{x:Null}" x:Name="__ReferenceID20" AddinType="EatonPLC">
+            <hwab:Interface.Address>
+              <hcc:SLAddress Name="EatonPLC" Workcell="SoftLinx" />
+            </hwab:Interface.Address>
+          </hwab:Interface>
+        </hwab:Variable.Default>
+      </hwab:Variable>
+    </hwab:VariableList>
+  </Protocol.Variables>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+</Protocol>
