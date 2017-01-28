@@ -1,0 +1,21 @@
+BioRad PCR 96
+96 Deep Protein
+TipBox-G100uL
+BioRad PCR 96
+TipBox-G100uL
+Empty
+Loop
+0
+!@#$
+MoveArm
+Position3
+100
+0
+!@#$
+MoveArm
+Position6
+100
+0
+!@#$
+EndLoop
+!@#$
