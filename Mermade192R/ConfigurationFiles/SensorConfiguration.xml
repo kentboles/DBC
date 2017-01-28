@@ -1,0 +1,7 @@
+﻿<SensorConfiguration xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Core.Configuration">
+  <SystemPressureSensorID>PRESS_SYS</SystemPressureSensorID>
+  <BottlePressureSensorID>PRESS_BTL</BottlePressureSensorID>
+  <VacuumSensorID>VACUUM_SYS</VacuumSensorID>
+  <ArgonHighFlowSensorID>FLOW_HIGH</ArgonHighFlowSensorID>
+  <ArgonLowFlowSensorID>FLOW</ArgonLowFlowSensorID>
+</SensorConfiguration>

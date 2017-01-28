@@ -1,0 +1,9 @@
+﻿<ValveConfiguration xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Core.Configuration">
+  <Plate1VacuumValveID>VAC_VALVE-1</Plate1VacuumValveID>
+  <Plate2VacuumValveID>VAC_VALVE-2</Plate2VacuumValveID>
+  <HighPressureValveID>ARGON_HIGH</HighPressureValveID>
+  <LowPressureValveID>ARGON_LOW</LowPressureValveID>
+  <PumpValveID>PUMP-1</PumpValveID>
+  <WasteValveID>WASTE</WasteValveID>
+  <PlateVacuumValveIDList xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+</ValveConfiguration>

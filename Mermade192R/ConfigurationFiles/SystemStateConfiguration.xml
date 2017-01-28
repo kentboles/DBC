@@ -1,0 +1,25 @@
+﻿<SystemStateConfiguration xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Core.Configuration">
+  <AlarmStateLightSettings xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfAlarmStatesLightSettingsmr5CvTSW>
+      <d2p1:Key>InAlarm</d2p1:Key>
+      <d2p1:Value>None</d2p1:Value>
+    </d2p1:KeyValueOfAlarmStatesLightSettingsmr5CvTSW>
+  </AlarmStateLightSettings>
+  <ConnectionStateLightSettings xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfConnectionStateLightSettingsmr5CvTSW>
+      <d2p1:Key>OffLine</d2p1:Key>
+      <d2p1:Value>RedBlinking YellowBlinking GreenBlinking BlueBlinking WhiteBlinking</d2p1:Value>
+    </d2p1:KeyValueOfConnectionStateLightSettingsmr5CvTSW>
+  </ConnectionStateLightSettings>
+  <SynthesisStateLightSettings xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfSynthesisStatesLightSettingsmr5CvTSW>
+      <d2p1:Key>SynthesisCompleted</d2p1:Key>
+      <d2p1:Value>None</d2p1:Value>
+    </d2p1:KeyValueOfSynthesisStatesLightSettingsmr5CvTSW>
+    <d2p1:KeyValueOfSynthesisStatesLightSettingsmr5CvTSW>
+      <d2p1:Key>SynthesisRunning</d2p1:Key>
+      <d2p1:Value>None</d2p1:Value>
+    </d2p1:KeyValueOfSynthesisStatesLightSettingsmr5CvTSW>
+  </SynthesisStateLightSettings>
+  <SynthesizerStateLightSettings xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+</SystemStateConfiguration>

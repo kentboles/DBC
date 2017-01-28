@@ -1,0 +1,7 @@
+﻿<ChamberPurgeConfiguration xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Core.Configuration">
+  <InitializationPurgeValveID>ARGON_HIGH</InitializationPurgeValveID>
+  <InitializationPurgeDuration>PT5M</InitializationPurgeDuration>
+  <ContinuePurgeValveID>ARGON_HIGH</ContinuePurgeValveID>
+  <ContinuePurgeDuration>PT2M30S</ContinuePurgeDuration>
+  <ExecuteInitializationPurge>true</ExecuteInitializationPurge>
+</ChamberPurgeConfiguration>

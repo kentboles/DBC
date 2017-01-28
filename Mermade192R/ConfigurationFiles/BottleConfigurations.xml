@@ -1,0 +1,122 @@
+﻿<BottleConfigurations xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Core.Configuration">
+  <BottleConfiguration>
+    <BottleID>1</BottleID>
+    <ReagentID>REAGENT-5</ReagentID>
+    <LotDate>2010-11-10T12:06:17.6731563-06:00</LotDate>
+    <FluidLevel>100</FluidLevel>
+    <LotNumber>Lot-1</LotNumber>
+    <BottleSize>4000</BottleSize>
+    <DisplayName></DisplayName>
+    <ValveGroupConfiguration />
+  </BottleConfiguration>
+  <BottleConfiguration>
+    <BottleID>2</BottleID>
+    <ReagentID>REAGENT-1</ReagentID>
+    <LotDate>2010-11-10T12:06:17.6731563-06:00</LotDate>
+    <FluidLevel>100</FluidLevel>
+    <LotNumber>Lot-1</LotNumber>
+    <BottleSize>4000</BottleSize>
+    <DisplayName></DisplayName>
+    <ValveGroupConfiguration />
+  </BottleConfiguration>
+  <BottleConfiguration>
+    <BottleID>3</BottleID>
+    <ReagentID>REAGENT-6</ReagentID>
+    <LotDate>2010-11-10T12:06:17.6731563-06:00</LotDate>
+    <FluidLevel>100</FluidLevel>
+    <LotNumber>Lot-1</LotNumber>
+    <BottleSize>4000</BottleSize>
+    <DisplayName></DisplayName>
+    <ValveGroupConfiguration />
+  </BottleConfiguration>
+  <BottleConfiguration>
+    <BottleID>4</BottleID>
+    <ReagentID>REAGENT-3</ReagentID>
+    <LotDate>2010-11-10T12:06:17.6731563-06:00</LotDate>
+    <FluidLevel>100</FluidLevel>
+    <LotNumber>Lot-1</LotNumber>
+    <BottleSize>4000</BottleSize>
+    <DisplayName></DisplayName>
+    <ValveGroupConfiguration />
+  </BottleConfiguration>
+  <BottleConfiguration>
+    <BottleID>5</BottleID>
+    <ReagentID>REAGENT-4</ReagentID>
+    <LotDate>2010-11-10T12:06:17.6731563-06:00</LotDate>
+    <FluidLevel>100</FluidLevel>
+    <LotNumber>Lot-1</LotNumber>
+    <BottleSize>4000</BottleSize>
+    <DisplayName></DisplayName>
+    <ValveGroupConfiguration />
+  </BottleConfiguration>
+  <BottleConfiguration>
+    <BottleID>6</BottleID>
+    <ReagentID>REAGENT-2</ReagentID>
+    <LotDate>2010-11-10T12:06:17.6731563-06:00</LotDate>
+    <FluidLevel>100</FluidLevel>
+    <LotNumber>Lot-1</LotNumber>
+    <BottleSize>4000</BottleSize>
+    <DisplayName></DisplayName>
+    <ValveGroupConfiguration />
+  </BottleConfiguration>
+  <BottleConfiguration>
+    <BottleID>7</BottleID>
+    <ReagentID>AMIDITE-1</ReagentID>
+    <LotDate>2010-11-10T12:06:17.6731563-06:00</LotDate>
+    <FluidLevel>100</FluidLevel>
+    <LotNumber>Lot-1</LotNumber>
+    <BottleSize>10</BottleSize>
+    <DisplayName></DisplayName>
+    <ValveGroupConfiguration />
+  </BottleConfiguration>
+  <BottleConfiguration>
+    <BottleID>8</BottleID>
+    <ReagentID>AMIDITE-2</ReagentID>
+    <LotDate>2010-11-10T12:06:17.6731563-06:00</LotDate>
+    <FluidLevel>100</FluidLevel>
+    <LotNumber>Lot-1</LotNumber>
+    <BottleSize>10</BottleSize>
+    <DisplayName></DisplayName>
+    <ValveGroupConfiguration />
+  </BottleConfiguration>
+  <BottleConfiguration>
+    <BottleID>9</BottleID>
+    <ReagentID>AMIDITE-3</ReagentID>
+    <LotDate>2010-12-02T11:28:53.524162-06:00</LotDate>
+    <FluidLevel>100</FluidLevel>
+    <LotNumber>Lot51</LotNumber>
+    <BottleSize>10</BottleSize>
+    <DisplayName></DisplayName>
+    <ValveGroupConfiguration />
+  </BottleConfiguration>
+  <BottleConfiguration>
+    <BottleID>10</BottleID>
+    <ReagentID>AMIDITE-4</ReagentID>
+    <LotDate>2010-11-10T12:06:17.6731563-06:00</LotDate>
+    <FluidLevel>100</FluidLevel>
+    <LotNumber>Lot-1</LotNumber>
+    <BottleSize>10</BottleSize>
+    <DisplayName></DisplayName>
+    <ValveGroupConfiguration />
+  </BottleConfiguration>
+  <BottleConfiguration>
+    <BottleID>11</BottleID>
+    <ReagentID>none_id</ReagentID>
+    <LotDate>2010-11-30T13:44:45.9958669-06:00</LotDate>
+    <FluidLevel>100</FluidLevel>
+    <LotNumber>Lot-2</LotNumber>
+    <BottleSize>10</BottleSize>
+    <DisplayName></DisplayName>
+    <ValveGroupConfiguration />
+  </BottleConfiguration>
+  <BottleConfiguration>
+    <BottleID>12</BottleID>
+    <ReagentID>none_id</ReagentID>
+    <LotDate>2010-11-10T12:06:17.6731563-06:00</LotDate>
+    <FluidLevel>100</FluidLevel>
+    <LotNumber>Lot-1</LotNumber>
+    <BottleSize>10</BottleSize>
+    <DisplayName></DisplayName>
+    <ValveGroupConfiguration />
+  </BottleConfiguration>
+</BottleConfigurations>

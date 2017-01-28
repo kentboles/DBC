@@ -1,0 +1,3 @@
+﻿<SystemInformationConfiguration xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Core.Configuration">
+  <SerialNumber>Ser-1234</SerialNumber>
+</SystemInformationConfiguration>

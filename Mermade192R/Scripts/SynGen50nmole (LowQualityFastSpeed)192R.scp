@@ -1,0 +1,580 @@
+﻿<SynthesisScript xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Core.Configuration">
+  <InitializationSteps>
+    <SynthesisStep i:type="WASHStep">
+      <Actions>Prime Inject</Actions>
+      <SynthesisProperties xmlns:d4p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+        <d4p1:HowToDrain>DrainOnly</d4p1:HowToDrain>
+        <d4p1:InjectionMode>Multiple</d4p1:InjectionMode>
+        <d4p1:InjectionVolume>250</d4p1:InjectionVolume>
+        <d4p1:NumberOfPrimes>1</d4p1:NumberOfPrimes>
+        <d4p1:PrimeVolume>50</d4p1:PrimeVolume>
+        <d4p1:ReagentID>REAGENT-6</d4p1:ReagentID>
+        <d4p1:VacuumConfigurationID>Wash</d4p1:VacuumConfigurationID>
+      </SynthesisProperties>
+    </SynthesisStep>
+    <SynthesisStep i:type="CAPPINGStep">
+      <Actions>Prime Inject</Actions>
+      <ReagentProperties xmlns:d4p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+        <d4p1:SynthesisProperties>
+          <d4p1:HowToDrain>DrainOnly</d4p1:HowToDrain>
+          <d4p1:InjectionMode>Multiple</d4p1:InjectionMode>
+          <d4p1:InjectionVolume>75</d4p1:InjectionVolume>
+          <d4p1:NumberOfPrimes>1</d4p1:NumberOfPrimes>
+          <d4p1:PrimeVolume>50</d4p1:PrimeVolume>
+          <d4p1:ReagentID>REAGENT-3</d4p1:ReagentID>
+          <d4p1:VacuumConfigurationID>Capping</d4p1:VacuumConfigurationID>
+        </d4p1:SynthesisProperties>
+        <d4p1:SynthesisProperties>
+          <d4p1:HowToDrain>DrainOnly</d4p1:HowToDrain>
+          <d4p1:InjectionMode>Multiple</d4p1:InjectionMode>
+          <d4p1:InjectionVolume>75</d4p1:InjectionVolume>
+          <d4p1:NumberOfPrimes>1</d4p1:NumberOfPrimes>
+          <d4p1:PrimeVolume>50</d4p1:PrimeVolume>
+          <d4p1:ReagentID>REAGENT-4</d4p1:ReagentID>
+          <d4p1:VacuumConfigurationID>Capping</d4p1:VacuumConfigurationID>
+        </d4p1:SynthesisProperties>
+      </ReagentProperties>
+    </SynthesisStep>
+    <SynthesisStep i:type="CAPPINGStep">
+      <Actions>Inject</Actions>
+      <ReagentProperties xmlns:d4p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+        <d4p1:SynthesisProperties>
+          <d4p1:HowToDrain>DrainOnly</d4p1:HowToDrain>
+          <d4p1:InjectionMode>Multiple</d4p1:InjectionMode>
+          <d4p1:InjectionVolume>75</d4p1:InjectionVolume>
+          <d4p1:NumberOfPrimes>1</d4p1:NumberOfPrimes>
+          <d4p1:PrimeVolume>50</d4p1:PrimeVolume>
+          <d4p1:ReagentID>REAGENT-3</d4p1:ReagentID>
+          <d4p1:VacuumConfigurationID>Capping</d4p1:VacuumConfigurationID>
+        </d4p1:SynthesisProperties>
+        <d4p1:SynthesisProperties>
+          <d4p1:HowToDrain>DrainOnly</d4p1:HowToDrain>
+          <d4p1:InjectionMode>Multiple</d4p1:InjectionMode>
+          <d4p1:InjectionVolume>75</d4p1:InjectionVolume>
+          <d4p1:NumberOfPrimes>1</d4p1:NumberOfPrimes>
+          <d4p1:PrimeVolume>50</d4p1:PrimeVolume>
+          <d4p1:ReagentID>REAGENT-4</d4p1:ReagentID>
+          <d4p1:VacuumConfigurationID>Capping</d4p1:VacuumConfigurationID>
+        </d4p1:SynthesisProperties>
+      </ReagentProperties>
+    </SynthesisStep>
+    <SynthesisStep i:type="WASHStep">
+      <Actions>Prime Inject</Actions>
+      <SynthesisProperties xmlns:d4p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+        <d4p1:HowToDrain>DrainOnly</d4p1:HowToDrain>
+        <d4p1:InjectionMode>Multiple</d4p1:InjectionMode>
+        <d4p1:InjectionVolume>250</d4p1:InjectionVolume>
+        <d4p1:NumberOfPrimes>1</d4p1:NumberOfPrimes>
+        <d4p1:PrimeVolume>50</d4p1:PrimeVolume>
+        <d4p1:ReagentID>REAGENT-6</d4p1:ReagentID>
+        <d4p1:VacuumConfigurationID>Wash</d4p1:VacuumConfigurationID>
+      </SynthesisProperties>
+    </SynthesisStep>
+    <SynthesisStep i:type="WASHStep">
+      <Actions>Prime Inject</Actions>
+      <SynthesisProperties xmlns:d4p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+        <d4p1:HowToDrain>DrainOnly</d4p1:HowToDrain>
+        <d4p1:InjectionMode>Multiple</d4p1:InjectionMode>
+        <d4p1:InjectionVolume>250</d4p1:InjectionVolume>
+        <d4p1:NumberOfPrimes>1</d4p1:NumberOfPrimes>
+        <d4p1:PrimeVolume>50</d4p1:PrimeVolume>
+        <d4p1:ReagentID>REAGENT-6</d4p1:ReagentID>
+        <d4p1:VacuumConfigurationID>Wash</d4p1:VacuumConfigurationID>
+      </SynthesisProperties>
+    </SynthesisStep>
+  </InitializationSteps>
+  <RunCycles>
+    <SynthesisCycle>
+      <StartingBasePosition>1</StartingBasePosition>
+      <CycleSteps>
+        <SynthesisStep i:type="DEBLOCKStep">
+          <Actions>Prime Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>200</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-1</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Deblock</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="DEBLOCKStep">
+          <Actions>Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>200</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-1</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Deblock</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="WASHStep">
+          <Actions>Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>250</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-6</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Wash</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="WASHStep">
+          <Actions>Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>250</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-6</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Wash</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="COUPLINGStep">
+          <Actions>Prime Inject</Actions>
+          <ActivatorSynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Single</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>70</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-2</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID i:nil="true" />
+          </ActivatorSynthesisProperties>
+          <AmiditeSynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Single</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>60</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>20</d6p1:PrimeVolume>
+              <d6p1:ReagentID>AMIDITE-1</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Coupling</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Single</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>60</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>20</d6p1:PrimeVolume>
+              <d6p1:ReagentID>AMIDITE-2</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Coupling</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Single</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>60</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>20</d6p1:PrimeVolume>
+              <d6p1:ReagentID>AMIDITE-3</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Coupling</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Single</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>60</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>20</d6p1:PrimeVolume>
+              <d6p1:ReagentID>AMIDITE-4</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Coupling</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+          </AmiditeSynthesisProperties>
+          <UseActivator>true</UseActivator>
+          <IncrementAmount>0</IncrementAmount>
+          <IncrementType>None</IncrementType>
+        </SynthesisStep>
+        <SynthesisStep i:type="CAPPINGStep">
+          <Actions>Prime Inject</Actions>
+          <ReagentProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>75</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+              <d6p1:ReagentID>REAGENT-3</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Capping</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>75</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+              <d6p1:ReagentID>REAGENT-4</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Capping</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+          </ReagentProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="OXIDIZEStep">
+          <Actions>Prime Inject</Actions>
+          <OxygenSynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>50</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-5</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Oxi</d6p1:VacuumConfigurationID>
+          </OxygenSynthesisProperties>
+          <SulphurSynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Single</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>50</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>50</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-5</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Oxi</d6p1:VacuumConfigurationID>
+          </SulphurSynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="CAPPINGStep">
+          <Actions>Prime Inject</Actions>
+          <ReagentProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>75</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+              <d6p1:ReagentID>REAGENT-3</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Capping</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>75</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+              <d6p1:ReagentID>REAGENT-4</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Capping</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+          </ReagentProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="WASHStep">
+          <Actions>Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>250</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-6</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Wash</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="WASHStep">
+          <Actions>Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>250</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>50</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-6</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Wash</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+      </CycleSteps>
+    </SynthesisCycle>
+    <SynthesisCycle>
+      <StartingBasePosition>40</StartingBasePosition>
+      <CycleSteps>
+        <SynthesisStep i:type="DEBLOCKStep">
+          <Actions>Prime Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>200</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-1</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Deblock</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="DEBLOCKStep">
+          <Actions>Prime Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>200</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-1</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Deblock</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="DEBLOCKStep">
+          <Actions>Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>200</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-1</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Deblock</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="WASHStep">
+          <Actions>Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>250</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-6</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Wash</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="WASHStep">
+          <Actions>Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>250</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-6</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Wash</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="WASHStep">
+          <Actions>Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>250</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-6</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Wash</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="COUPLINGStep">
+          <Actions>Prime Inject</Actions>
+          <ActivatorSynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Single</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>70</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-2</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID i:nil="true" />
+          </ActivatorSynthesisProperties>
+          <AmiditeSynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Single</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>60</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>20</d6p1:PrimeVolume>
+              <d6p1:ReagentID>AMIDITE-1</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Coupling</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Single</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>60</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>20</d6p1:PrimeVolume>
+              <d6p1:ReagentID>AMIDITE-2</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Coupling</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Single</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>60</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>20</d6p1:PrimeVolume>
+              <d6p1:ReagentID>AMIDITE-3</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Coupling</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Single</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>60</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>20</d6p1:PrimeVolume>
+              <d6p1:ReagentID>AMIDITE-4</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Coupling</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+          </AmiditeSynthesisProperties>
+          <UseActivator>true</UseActivator>
+          <IncrementAmount>0</IncrementAmount>
+          <IncrementType>None</IncrementType>
+        </SynthesisStep>
+        <SynthesisStep i:type="CAPPINGStep">
+          <Actions>Prime Inject</Actions>
+          <ReagentProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>75</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+              <d6p1:ReagentID>REAGENT-3</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Capping</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>75</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+              <d6p1:ReagentID>REAGENT-4</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Capping</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+          </ReagentProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="OXIDIZEStep">
+          <Actions>Prime Inject</Actions>
+          <OxygenSynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>50</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-5</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Oxi</d6p1:VacuumConfigurationID>
+          </OxygenSynthesisProperties>
+          <SulphurSynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Single</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>50</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>50</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-5</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Oxi</d6p1:VacuumConfigurationID>
+          </SulphurSynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="CAPPINGStep">
+          <Actions>Prime Inject</Actions>
+          <ReagentProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>75</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+              <d6p1:ReagentID>REAGENT-3</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Capping</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+            <d6p1:SynthesisProperties>
+              <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+              <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+              <d6p1:InjectionVolume>75</d6p1:InjectionVolume>
+              <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+              <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+              <d6p1:ReagentID>REAGENT-4</d6p1:ReagentID>
+              <d6p1:VacuumConfigurationID>Capping</d6p1:VacuumConfigurationID>
+            </d6p1:SynthesisProperties>
+          </ReagentProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="WASHStep">
+          <Actions>Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>250</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>10</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-6</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Wash</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+        <SynthesisStep i:type="WASHStep">
+          <Actions>Inject</Actions>
+          <SynthesisProperties xmlns:d6p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+            <d6p1:HowToDrain>DrainOnly</d6p1:HowToDrain>
+            <d6p1:InjectionMode>Multiple</d6p1:InjectionMode>
+            <d6p1:InjectionVolume>250</d6p1:InjectionVolume>
+            <d6p1:NumberOfPrimes>1</d6p1:NumberOfPrimes>
+            <d6p1:PrimeVolume>50</d6p1:PrimeVolume>
+            <d6p1:ReagentID>REAGENT-6</d6p1:ReagentID>
+            <d6p1:VacuumConfigurationID>Wash</d6p1:VacuumConfigurationID>
+          </SynthesisProperties>
+        </SynthesisStep>
+      </CycleSteps>
+    </SynthesisCycle>
+  </RunCycles>
+  <FinalizationSteps>
+    <SynthesisStep i:type="DEBLOCKStep">
+      <Actions>Prime Inject</Actions>
+      <SynthesisProperties xmlns:d4p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+        <d4p1:HowToDrain>DrainOnly</d4p1:HowToDrain>
+        <d4p1:InjectionMode>Multiple</d4p1:InjectionMode>
+        <d4p1:InjectionVolume>200</d4p1:InjectionVolume>
+        <d4p1:NumberOfPrimes>1</d4p1:NumberOfPrimes>
+        <d4p1:PrimeVolume>50</d4p1:PrimeVolume>
+        <d4p1:ReagentID>REAGENT-1</d4p1:ReagentID>
+        <d4p1:VacuumConfigurationID>Deblock</d4p1:VacuumConfigurationID>
+      </SynthesisProperties>
+    </SynthesisStep>
+    <SynthesisStep i:type="DEBLOCKStep">
+      <Actions>Inject</Actions>
+      <SynthesisProperties xmlns:d4p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+        <d4p1:HowToDrain>DrainOnly</d4p1:HowToDrain>
+        <d4p1:InjectionMode>Multiple</d4p1:InjectionMode>
+        <d4p1:InjectionVolume>200</d4p1:InjectionVolume>
+        <d4p1:NumberOfPrimes>1</d4p1:NumberOfPrimes>
+        <d4p1:PrimeVolume>50</d4p1:PrimeVolume>
+        <d4p1:ReagentID>REAGENT-1</d4p1:ReagentID>
+        <d4p1:VacuumConfigurationID>Deblock</d4p1:VacuumConfigurationID>
+      </SynthesisProperties>
+    </SynthesisStep>
+    <SynthesisStep i:type="DEBLOCKStep">
+      <Actions>Inject</Actions>
+      <SynthesisProperties xmlns:d4p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+        <d4p1:HowToDrain>DrainOnly</d4p1:HowToDrain>
+        <d4p1:InjectionMode>Multiple</d4p1:InjectionMode>
+        <d4p1:InjectionVolume>200</d4p1:InjectionVolume>
+        <d4p1:NumberOfPrimes>1</d4p1:NumberOfPrimes>
+        <d4p1:PrimeVolume>50</d4p1:PrimeVolume>
+        <d4p1:ReagentID>REAGENT-1</d4p1:ReagentID>
+        <d4p1:VacuumConfigurationID>Deblock</d4p1:VacuumConfigurationID>
+      </SynthesisProperties>
+    </SynthesisStep>
+    <SynthesisStep i:type="WASHStep">
+      <Actions>Prime Inject</Actions>
+      <SynthesisProperties xmlns:d4p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+        <d4p1:HowToDrain>DrainOnly</d4p1:HowToDrain>
+        <d4p1:InjectionMode>Multiple</d4p1:InjectionMode>
+        <d4p1:InjectionVolume>250</d4p1:InjectionVolume>
+        <d4p1:NumberOfPrimes>1</d4p1:NumberOfPrimes>
+        <d4p1:PrimeVolume>50</d4p1:PrimeVolume>
+        <d4p1:ReagentID>REAGENT-6</d4p1:ReagentID>
+        <d4p1:VacuumConfigurationID>Wash</d4p1:VacuumConfigurationID>
+      </SynthesisProperties>
+    </SynthesisStep>
+    <SynthesisStep i:type="WASHStep">
+      <Actions>Prime Inject</Actions>
+      <SynthesisProperties xmlns:d4p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+        <d4p1:HowToDrain>DrainOnly</d4p1:HowToDrain>
+        <d4p1:InjectionMode>Multiple</d4p1:InjectionMode>
+        <d4p1:InjectionVolume>250</d4p1:InjectionVolume>
+        <d4p1:NumberOfPrimes>1</d4p1:NumberOfPrimes>
+        <d4p1:PrimeVolume>50</d4p1:PrimeVolume>
+        <d4p1:ReagentID>REAGENT-6</d4p1:ReagentID>
+        <d4p1:VacuumConfigurationID>Wash</d4p1:VacuumConfigurationID>
+      </SynthesisProperties>
+    </SynthesisStep>
+    <SynthesisStep i:type="WASHStep">
+      <Actions>Prime Inject</Actions>
+      <SynthesisProperties xmlns:d4p1="http://schemas.datacontract.org/2004/07/Core.ScriptModel.Serialization">
+        <d4p1:HowToDrain>DrainOnly</d4p1:HowToDrain>
+        <d4p1:InjectionMode>Multiple</d4p1:InjectionMode>
+        <d4p1:InjectionVolume>250</d4p1:InjectionVolume>
+        <d4p1:NumberOfPrimes>1</d4p1:NumberOfPrimes>
+        <d4p1:PrimeVolume>50</d4p1:PrimeVolume>
+        <d4p1:ReagentID>REAGENT-6</d4p1:ReagentID>
+        <d4p1:VacuumConfigurationID>Wash</d4p1:VacuumConfigurationID>
+      </SynthesisProperties>
+    </SynthesisStep>
+  </FinalizationSteps>
+</SynthesisScript>

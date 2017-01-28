@@ -1,0 +1,20 @@
+﻿<UserRoles xmlns:d1p1="http://schemas.datacontract.org/2004/07/Poseidon.Model" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Core.Configuration">
+  <d1p1:Role>
+    <d1p1:RoleID>4b23a5fa-5326-4233-b6a7-48e8fb34193b</d1p1:RoleID>
+    <d1p1:RoleName>System_Admin</d1p1:RoleName>
+    <d1p1:MembersOfRoleData>G0V82bFw644ZHKoPTHWb6PuQob0tTadlVl47piVJq5fiDvE04iDNA4urU92qNfQLWpd/hL2XjZrOBzX5d9hIeNnrDtFU5S/veAY/Hdk+UDoahCR8UKrg9OoPU7+FxN3H4xeoROwZHjXSg5/eNvEnEcP/j2f0sZ/3tM7oeKQJFrgpuGch81cgkAc7ytOOCuVPpnna2G/W8+8hqJbec41RS7d7K3Su6C7q0wSwlUCpnsCSQNojEx77ws/IZvIVAYUPGW8NyDvY2xpWXkpqmiEnNMicd1c/dbptSMzvryqLhetE5tTRlGa48pUq9qbQAwSq+VXW57IkVMo3QYG06zjvQPwpyH642P9N</d1p1:MembersOfRoleData>
+    <d1p1:PermissionsData>gZGnJ8gRloJCK1K1Z49aISAufNeAGZRRgSHD+riTJ9CUzcnssFyMxoROZJ+ZGMH3gS2FxYML1bFH7PxIXGI1NTT+wEcVzJFQx4w+M00WEyKXTPqNQeuxV/k4Z4/vbXWT7i8OiNIvHNU=</d1p1:PermissionsData>
+  </d1p1:Role>
+  <d1p1:Role>
+    <d1p1:RoleID>9215c517-036f-4ebc-a073-e40217695c71</d1p1:RoleID>
+    <d1p1:RoleName>Manager</d1p1:RoleName>
+    <d1p1:MembersOfRoleData>+UG5fPvSF064dMv/O2YlqtPnHPB9pzkE87dBUwEBusQNzVAXsyChkzZBCHb2Lthp5ZyVkCBZqel6xHIGj++1FBKTfra4QeZvsWs5bqkfXlEZEQV6rNxQP8jsh0EXqHM3T1MNg4JIfFxWrDQ6XP6n3IThyZkeV4pcxLadpsuEasyny6yu5xQ4dYvCv4PPjmd+a2yYnRheSHTjdQkxo82ktcP4Wcbra/iZEmdS8BU0lrhA8Q449tIcfy7abLqS2AZbPXLHujudjtaspDrrVH31rQ==</d1p1:MembersOfRoleData>
+    <d1p1:PermissionsData>Os+N+KPDepJGtnROF9JULUlOYhvALWTdwV6SwWh89JEEJ1nKW3hyy3rVHRSpY1IVBVwtOCLDB7Zuq86ummuOxgRotThAQI9ERSGGOvJdYtjH39CpZ1dIJUduY/tyaJ7oGF+rQk7W4jhxTdMQ/g9ZIWnsnhDY27+2a6wrdq9zbuTCYdVyU13V/4hj5oA/ia037zrLt/jA/C+4RYGtocVWpr+Pfqn8YOYMHPKEx83ZcgJFaGtqOjsoonz5/PYfNG/029HiZhyzwv+gAZ4YixHfDw==</d1p1:PermissionsData>
+  </d1p1:Role>
+  <d1p1:Role>
+    <d1p1:RoleID>297dcfde-b525-499e-b2af-119e0fb95657</d1p1:RoleID>
+    <d1p1:RoleName>Operator</d1p1:RoleName>
+    <d1p1:MembersOfRoleData>QuGGMC57Xnx8BIywlvviGYyQ1rTYpuag6WoADDAfa8bEuGt87Xt/7Dp/4e8v+7YJeXvufFAnD7HqDHSCYBzDYj3LNIo6NVgsS4bllFpq4AbHLF59tavaR/XgMpa4+sviESEu/4ZtDPae0nb7BU8lSqHWIg+VohIwG+IPIRT5XmwWvSib6nGoFa+Cam/y9+Ipd/TP+rcc8jrnbCdafHv7CGHwZ/9C2ld1y+wWIyTAvBC0gBijeEGgfxvDA2E9J9m8XrSEb4Vg+ZE13znVb6d+Ag==</d1p1:MembersOfRoleData>
+    <d1p1:PermissionsData>KR6ENewDo3n946bMT+bqSoQMMfIbwSv5oL7pTLihwd9ptwpsUs9jY28WyRZcyztSbUKbYugAaPnnV7BRsGNU2i/dyFtX93hxhGcKH39kCw5/BABEdNWlZlazSr7VGrPHvyZTDq361oHMDmMTTKAZMkYkE2d/ebqPwYde6YIe+D2l/49p4ycEEYzv+7+TDcmsRTNjanhc51oJfe6Epynbgg2ajAy03m/7</d1p1:PermissionsData>
+  </d1p1:Role>
+</UserRoles>

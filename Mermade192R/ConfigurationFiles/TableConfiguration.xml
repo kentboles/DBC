@@ -1,0 +1,55 @@
+﻿<TableConfiguration xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Core.Configuration">
+  <WellToWellDistance>4500</WellToWellDistance>
+  <WasteTrayWidth>2</WasteTrayWidth>
+  <LoadPlateLocation>
+    <LocationName>Load Plate</LocationName>
+    <Position>90000</Position>
+    <YPosition>0</YPosition>
+  </LoadPlateLocation>
+  <ViewPlate1>
+    <LocationName>View Plate Left</LocationName>
+    <Position>25000</Position>
+    <YPosition>0</YPosition>
+  </ViewPlate1>
+  <ViewPlate2>
+    <LocationName>View Plate Right</LocationName>
+    <Position>155000</Position>
+    <YPosition>0</YPosition>
+  </ViewPlate2>
+  <WasteTrayLocation>
+    <LocationName>Waste Tray</LocationName>
+    <Position>149000</Position>
+    <YPosition>0</YPosition>
+  </WasteTrayLocation>
+  <Plate1BaseTableLocation>
+    <LocationName>GROUP-12</LocationName>
+    <Position>127175</Position>
+    <YPosition>0</YPosition>
+  </Plate1BaseTableLocation>
+  <Plate2BaseTableLocation>
+    <LocationName>GROUP-12</LocationName>
+    <Position>55675</Position>
+    <YPosition>0</YPosition>
+  </Plate2BaseTableLocation>
+  <PresentPlateTableLocation>
+    <LocationName>Present Plate</LocationName>
+    <Position>375000</Position>
+    <YPosition>0</YPosition>
+  </PresentPlateTableLocation>
+  <Parameters>
+    <HomingVelocity>3750</HomingVelocity>
+    <HomingAcceleration>3750</HomingAcceleration>
+    <HomingDeceleration>3750</HomingDeceleration>
+    <Velocity>15000</Velocity>
+    <Acceleration>30000</Acceleration>
+    <Decleration>40000</Decleration>
+  </Parameters>
+  <PlateBaseTableLocationList i:nil="true" />
+  <ViewPlateLocationList i:nil="true" />
+  <WellToWellDistanceY>4500</WellToWellDistanceY>
+  <HomePosition>
+    <LocationName>Home</LocationName>
+    <Position>0</Position>
+    <YPosition>0</YPosition>
+  </HomePosition>
+</TableConfiguration>
