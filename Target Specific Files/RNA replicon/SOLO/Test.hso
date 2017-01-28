@@ -1,0 +1,21 @@
+BioRad PCR 96
+96 Deep Protein
+TipBox-G100uL
+BioRad PCR 96
+TipBox-G100uL
+Empty
+Loop
+-1
+!@#$
+MoveArm
+sgi test
+100
+1
+!@#$
+MoveArm
+sgi test2
+100
+1
+!@#$
+EndLoop
+!@#$
